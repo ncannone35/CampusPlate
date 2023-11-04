@@ -5,10 +5,13 @@ let recipeUrl = 'https://dining.rochester.edu/wp-content/themes/nmc_dining/ajax-
 let mealsUrl = 'https://dining.rochester.edu/locations/douglass-dining/?date='
 
 function currDateString() {
-
-    return '2023-11-03'
-
+    let today = new Date();
+    let year = today.getFullYear();
+    let month = String(today.getMonth() + 1).padStart(2, '0'); // January is 0
+    let day = String(today.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
 }
+
 
 generateNutritionFile('nutrition.json')
 
