@@ -8,13 +8,8 @@ let possibles = []
 let population = []
 var { POP_SIZE = 1000, MAX_ITEMS = 50, GOAL_CALORIES = 2500, GOAL_CARBS = 200, GOAL_FAT = 50, MIN_CALORIES = 50, NUM_GEN = 250, GOAL_PROTEIN = 150, MUTATION_CHANCE = 0.0025 } = process.env
 
-// based on science
-GOAL_CARBS = GOAL_CALORIES*.5/4
-
-// based on science
-GOAL_FAT = GOAL_CALORIES*.275/9
-
-
+GOAL_CARBS = GOAL_CALORIES * .5 / 4
+GOAL_FAT = GOAL_CALORIES * .275 / 9
 GOAL_CALORIES = process.argv[2] || GOAL_CALORIES
 
 console.log("Goal calories:", parseInt(GOAL_CALORIES))
@@ -88,13 +83,15 @@ function fitness(h) {
     const diffCarbs = Math.abs(carbs - GOAL_CARBS);
 
     // Sum the differences
-    const totalDifference = (diffCalories) + (diffProtein) + diffFat + diffCarbs;
-
+    let calDiff = (GOAL_CALORIES - Math.abs(GOAL_CALORIES - cals))
+    let c = (calDiff + ((calDiff / 2) * (variety / h.numFoods)))
+    const totalDifference = (GOAL_CALORIES - diffCalories) * (GOAL_PROTEIN - diffProtein) * ((GOAL_FAT - diffFat) / 100) * ((GOAL_CARBS - diffCarbs) / 100) * (variety / h.numFoods)
+    return totalDifference
     // Calculate fitness score, higher is better
     // Adding 1 to prevent division by zero
     const fitness = 1 / (1 + totalDifference);
-    let calDiff = (GOAL_CALORIES - Math.abs(GOAL_CALORIES - cals))
-    return (calDiff + ((calDiff / 2) * (variety / h.numFoods))) * protein // * (1 / Math.abs(carbs - GOAL_CARBS)) * (1 / Math.abs(fat - GOAL_FAT))
+    // let calDiff = (GOAL_CALORIES - Math.abs(GOAL_CALORIES - cals))
+    // return (calDiff + ((calDiff / 2) * (variety / h.numFoods))) * protein // * (1 / Math.abs(carbs - GOAL_CARBS)) * (1 / Math.abs(fat - GOAL_FAT))
 
     //return fitness * (variety / h.numFoods)
 }
@@ -149,7 +146,7 @@ let c = 0
 let p = 0
 pop[0].foods.sort((a, b) => { return (`${a.time}`).localeCompare(b.time) })
 for (let i of pop[0].foods) {
-    console.log(i.time, "|", i.name, "|", i.place, "|", "Calories:", i.calories, "Protein:", i.protein)
+    console.log(i.time, "|", i.name, "|", i.place, "|", "Calories:", i.calories, "Protein:", i.protein, "Carbs", i.carbs, "Fat", i.fat)
     c += i.calories
     p += i.protein
 }
