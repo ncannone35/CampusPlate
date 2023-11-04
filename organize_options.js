@@ -50,6 +50,11 @@ function generate_possible_meals(meals_list) {
         let rice_fat = ''
         let rice_carbs = ''
         let contains_rice = false
+        let cream_calories = 0 
+        let cream_protein = ''
+        let cream_fat = ''
+        let cream_carbs = ''
+        let contains_cream_cheese = false
         if(meals_list[i].info.calories > 110) {
             if(meals_list[i].info.name.includes("Rice") ) {
                 contains_rice = true
@@ -75,7 +80,28 @@ function generate_possible_meals(meals_list) {
         }
         }
         else{
-            low_calorie_meals.push(meals_list[i])
+            if(meals_list[i].info.name.includes("CreamCheese") ) {
+                contains_cream_cheese = true
+                cream_calories= meals_list[i].info.calories
+                cream_carbs = meals_list[i].info.carbs 
+                cream_protein = meals_list[i].info.protein
+                cream_fat = meals_list[i].info.fat 
+            }
+            else{
+                low_calorie_meals.push(meals_list[i])
+            }
+            if(contains_cream_cheese) {
+                let cream = {
+                    name: 'Choice of Cream Cheese',
+                    info: {
+                        calories: cream_calories,
+                        protein: cream_protein,
+                        fat: cream_fat,
+                        carbs: cream_carbs 
+                    }
+                }
+            low_calorie_meals.push(cream)
+            }
         }
     }
     let low_cal_combos = allCombinations(low_calorie_meals)
@@ -114,11 +140,13 @@ function format_meals(meals) {
         let fat = '0g'
         for(let ingredient of meal) {
             if(!(ingredient.name == 'Choice of Rice' && ingredients.includes('Choice of Rice'))) {
-                ingredients.push(ingredient.name)
-                cals = cals + ingredient.info.calories
-                protein = addGrams([ingredient.info.protein, protein])
-                carbs = addGrams([ingredient.info.carbs, carbs])
-                fat = addGrams([ingredient.info.fat, fat])
+                if(!(ingredient.name == 'Choice of Cream Cheese' && ingredients.includes('Choice of Cream Cheese'))) {
+                    ingredients.push(ingredient.name)
+                    cals = cals + ingredient.info.calories
+                    protein = addGrams([ingredient.info.protein, protein])
+                    carbs = addGrams([ingredient.info.carbs, carbs])
+                    fat = addGrams([ingredient.info.fat, fat])
+                }
             }
         }
         
