@@ -1,5 +1,6 @@
 'use strict'
 const GA = require('./ga.js')
+const fs = require('fs')
 require('dotenv').config()
 
 const recipes = require('./nutrition.json')
@@ -28,7 +29,9 @@ for (let time of recipes) {
                 place: place.name,
                 name: meal.name,
                 calories: meal.info.calories,
-                protein: parseInt(meal.info.protein)
+                protein: parseInt(meal.info.protein),
+                carbs: parseInt(meal.info.carbs),
+                fat: parseInt(meal.info.fat)
             })
 
         }
@@ -56,12 +59,13 @@ function randomDay() {
 
 
 function fitness(h) {
+    console.log(h)
     let variety = h.numFoods
     for (let i = 0; i < h.foods.length; i++) {
         for (let j = 0; j < h.foods.length; j++) {
             if (i == j) continue
             if (h.foods[i].name == h.foods[j].name) {
-                variety -= 0.5
+                variety -= 0.95
             }
         }
     }
@@ -75,7 +79,7 @@ function fitness(h) {
         carbs += f.carbs
         fat += f.fat
     }
-    if (protein > GOAL_PROTEIN) protein = GOAL_PROTEIN
+    //if (protein > GOAL_PROTEIN) protein = GOAL_PROTEIN
 
     const diffCalories = Math.abs(cals - GOAL_CALORIES);
     const diffProtein = Math.abs(protein - GOAL_PROTEIN);
@@ -85,8 +89,10 @@ function fitness(h) {
     // Sum the differences
     let calDiff = (GOAL_CALORIES - Math.abs(GOAL_CALORIES - cals))
     let c = (calDiff + ((calDiff / 2) * (variety / h.numFoods)))
-    const totalDifference = (GOAL_CALORIES - diffCalories) * (GOAL_PROTEIN - diffProtein) * ((GOAL_FAT - diffFat) / 100) * ((GOAL_CARBS - diffCarbs) / 100) * (variety / h.numFoods)
-    return totalDifference
+    const totalDifference = (GOAL_CALORIES - diffCalories) * (GOAL_PROTEIN - diffProtein) * ((GOAL_FAT - diffFat) / 100) * ((GOAL_CARBS - diffCarbs) / 100)
+    //return totalDifference
+    const fit = (1 / diffCalories) + (1 / diffProtein) + (1 / diffFat) + (1 / diffCarbs)
+    return fit
     // Calculate fitness score, higher is better
     // Adding 1 to prevent division by zero
     const fitness = 1 / (1 + totalDifference);
@@ -144,17 +150,23 @@ for (let i = 0; i < NUM_GEN; i++) {
 let pop = GA.getPop()
 let c = 0
 let p = 0
+let ca = 0
+let fa = 0
 pop[0].foods.sort((a, b) => { return (`${a.time}`).localeCompare(b.time) })
 for (let i of pop[0].foods) {
     console.log(i.time, "|", i.name, "|", i.place, "|", "Calories:", i.calories, "Protein:", i.protein, "Carbs", i.carbs, "Fat", i.fat)
     c += i.calories
     p += i.protein
+    ca += i.carbs
+    fa += i.fat
 }
 
-
+fs.writeFileSync("file.json", JSON.stringify(pop[0]))
 
 console.log("Calories:", c)
 console.log("Protein:", p)
+console.log("Carbs", ca)
+console.log("Fats", fa)
 console.log("Mutations:", GA.mCount())
 
 

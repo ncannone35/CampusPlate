@@ -13,7 +13,7 @@ function currDateString() {
 }
 
 
-//generateNutritionFile('nutrition.json')
+generateNutritionFile('nutrition.json')
 
 async function generateNutritionFile(path) {
     console.log("Generating nutrition file...this will take a minute")
@@ -81,7 +81,7 @@ function getRecipeAtIndex(i) {
     let protein = data.html.split('Protein</b>')[1].split('</th>')[0]
     let cals = data.html.split('Calories')[1]
     let fat = data.html.split('TotalFat</b>')[1].split('</th>')[0]
-    let carbs = data.html.split('TotalCarbohydrates</b>')[1].split('</th>')[0]
+    let carbs = data.html.split('TotalCarbohydrate</b>')[1].split('</th>')[0]
     cals = cals.split('</th>')[0]
     cals = cals.slice(4)
 
