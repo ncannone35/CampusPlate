@@ -14,7 +14,7 @@ generateNutritionFile('nutrition.json')
 
 async function generateNutritionFile(path) {
     console.log("Generating nutrition file...this will take a minute")
-    await fs.writeFile(path, JSON.stringify(getMealsByTime()))
+    await fs.writeFile(path, JSON.stringify(getMealsByTime(), undefined, 4))
     console.log("All done")
 }
 
@@ -83,6 +83,8 @@ function getRecipeAtIndex(i) {
     let name = data.html.split('<h2>')[1].split('</h2>')[0]
     let protein = data.html.split('Protein</b>')[1].split('</th>')[0]
     let cals = data.html.split('Calories')[1]
+    let fat = data.html.split('Fat</b>')[1].split('</th>')[0]
+    let carbs = data.html.split('Total Carbohydrates</b>')[1].split('</th>')[0]
     cals = cals.split('</th>')[0]
     cals = cals.slice(4)
 
@@ -90,8 +92,9 @@ function getRecipeAtIndex(i) {
     let recipe = {
         name: name,
         protein: protein,
-        calories: parseInt(cals)
-
+        calories: parseInt(cals),
+        fat: fat,
+        carbs: carbs
     }
 
     return recipe
