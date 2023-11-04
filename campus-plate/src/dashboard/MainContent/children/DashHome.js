@@ -85,7 +85,7 @@ const DashHome = ({ preferences }) => {
   };
   const [mealSelected, setMealSelected] = useState(0);
 
-  const [meals, setMeals] = useState(mealsTesting);
+  const [meals, setMeals] = useState(null);
 
   const handleGenerate = async (e) => {
     e.preventDefault();
@@ -138,7 +138,7 @@ const DashHome = ({ preferences }) => {
 
             <button
               onClick={handleGenerate}
-              className="tracking-widest text-base font-semibold border- px-2 py-[2px] rounded-3xl bg- text-[#fbbf24] hover:text-white bg-white hover:bg-[#fbbf24] transition-colors border-2 border-heavy"
+              className="tracking-widest text-base font-semibold border- px-2 py-[3px] rounded-3xl bg- text-black hover:text-white bg-white hover:bg-[#fbbf24] transition border-[3px] border-bgColor hover:scale-110"
             >
               {" "}
               Generate{" "}

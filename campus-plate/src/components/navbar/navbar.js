@@ -44,7 +44,7 @@ const NavBar = () => {
               )}
             </>
           ) : (
-            <a className="text-xl font-semibold" href="/api/auth/login">Login</a>
+            <a className="text-xl font-semibold text-white" href="/api/auth/login">Login</a>
           )}
         </div>
       </div>
