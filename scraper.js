@@ -86,8 +86,8 @@ function getRecipeAtIndex(i) {
     let name = data.html.split('<h2>')[1].split('</h2>')[0]
     let protein = data.html.split('Protein</b>')[1].split('</th>')[0]
     let cals = data.html.split('Calories')[1]
-    let fat = data.html.split('Total Fat</b>')[1].split('</th>')[0]
-    let carbs = data.html.split('Total Carbohydrates</b>')[1].split('</th>')[0]
+    let fat = data.html.split('TotalFat</b>')[1].split('</th>')[0]
+    let carbs = data.html.split('TotalCarbohydrate</b>')[1].split('</th>')[0]
     cals = cals.split('</th>')[0]
     cals = cals.slice(4)
 
