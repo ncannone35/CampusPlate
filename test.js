@@ -82,14 +82,19 @@ function fitness(h) {
     const diffFat = Math.abs(fat - GOAL_FAT);
     const diffCarbs = Math.abs(carbs - GOAL_CARBS);
 
+    const totalDifference = (GOAL_CALORIES - diffCalories) * (GOAL_PROTEIN - diffProtein) * ((GOAL_FAT - diffFat) / 100) * ((GOAL_CARBS - diffCarbs) / 100)
+    //return totalDifference
+    const fit = (1 / diffCalories) + (1 / diffProtein) + (1 / diffFat) + (1 / diffCarbs)
+    return fit
+    
     // Sum the differences
-    let calDiff = (GOAL_CALORIES - Math.abs(GOAL_CALORIES - cals))
-    let c = (calDiff + ((calDiff / 2) * (variety / h.numFoods)))
-    const totalDifference = (GOAL_CALORIES - diffCalories) * (GOAL_PROTEIN - diffProtein) * ((GOAL_FAT - diffFat) / 100) * ((GOAL_CARBS - diffCarbs) / 100) * (variety / h.numFoods)
-    return totalDifference
-    // Calculate fitness score, higher is better
-    // Adding 1 to prevent division by zero
-    const fitness = 1 / (1 + totalDifference);
+    // let calDiff = (GOAL_CALORIES - Math.abs(GOAL_CALORIES - cals))
+    // let c = (calDiff + ((calDiff / 2) * (variety / h.numFoods)))
+    // const totalDifference = (GOAL_CALORIES - diffCalories) * (GOAL_PROTEIN - diffProtein) * ((GOAL_FAT - diffFat) / 100) * ((GOAL_CARBS - diffCarbs) / 100) * (variety / h.numFoods)
+    // return totalDifference
+    // // Calculate fitness score, higher is better
+    // // Adding 1 to prevent division by zero
+    // const fitness = 1 / (1 + totalDifference);
     // let calDiff = (GOAL_CALORIES - Math.abs(GOAL_CALORIES - cals))
     // return (calDiff + ((calDiff / 2) * (variety / h.numFoods))) * protein // * (1 / Math.abs(carbs - GOAL_CARBS)) * (1 / Math.abs(fat - GOAL_FAT))
 
