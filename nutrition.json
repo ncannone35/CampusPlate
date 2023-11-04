@@ -13,7 +13,10 @@
                             "protein": "7g",
                             "calories": 210,
                             "fat": "3g",
-                            "carbs": "35g"
+                            "carbs": "35g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -24,7 +27,11 @@
                             "protein": "15g",
                             "calories": 220,
                             "fat": "17g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -35,7 +42,10 @@
                             "protein": "2g",
                             "calories": 30,
                             "fat": "2.5g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -46,7 +56,10 @@
                             "protein": "7g",
                             "calories": 190,
                             "fat": "18g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -57,7 +70,12 @@
                             "protein": "2g",
                             "calories": 210,
                             "fat": "15g",
-                            "carbs": "17g"
+                            "carbs": "17g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -68,7 +86,12 @@
                             "protein": "0g",
                             "calories": 100,
                             "fat": "0g",
-                            "carbs": "26g"
+                            "carbs": "26g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -79,7 +102,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -90,7 +118,11 @@
                             "protein": "6g",
                             "calories": 110,
                             "fat": "9g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -101,7 +133,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -112,7 +149,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -123,7 +165,10 @@
                             "protein": "1g",
                             "calories": 30,
                             "fat": "2.5g",
-                            "carbs": "21g"
+                            "carbs": "21g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -134,7 +179,12 @@
                             "protein": "1g",
                             "calories": 15,
                             "fat": "0g",
-                            "carbs": "5g"
+                            "carbs": "5g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -150,7 +200,8 @@
                             "protein": "12g",
                             "calories": 230,
                             "fat": "13g",
-                            "carbs": "15g"
+                            "carbs": "15g",
+                            "dietary_restrictions": []
                         }
                     },
                     {
@@ -161,7 +212,10 @@
                             "protein": "11g",
                             "calories": 180,
                             "fat": "9g",
-                            "carbs": "15g"
+                            "carbs": "15g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -172,7 +226,11 @@
                             "protein": "6g",
                             "calories": 70,
                             "fat": "4.5g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -183,7 +241,12 @@
                             "protein": "1g",
                             "calories": 25,
                             "fat": "0g",
-                            "carbs": "6g"
+                            "carbs": "6g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -194,7 +257,12 @@
                             "protein": "0g",
                             "calories": 35,
                             "fat": "0g",
-                            "carbs": "10g"
+                            "carbs": "10g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -205,7 +273,12 @@
                             "protein": "0g",
                             "calories": 30,
                             "fat": "0g",
-                            "carbs": "8g"
+                            "carbs": "8g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -221,7 +294,11 @@
                             "protein": "15g",
                             "calories": 180,
                             "fat": "12g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -232,7 +309,12 @@
                             "protein": "17g",
                             "calories": 160,
                             "fat": "11g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -243,7 +325,10 @@
                             "protein": "7g",
                             "calories": 90,
                             "fat": "7g",
-                            "carbs": "0.99g"
+                            "carbs": "0.99g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -254,7 +339,12 @@
                             "protein": "2g",
                             "calories": 15,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -265,7 +355,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -276,7 +371,12 @@
                             "protein": "3g",
                             "calories": 100,
                             "fat": "10g",
-                            "carbs": "4g"
+                            "carbs": "4g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -287,7 +387,11 @@
                             "protein": "6g",
                             "calories": 110,
                             "fat": "9g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -303,7 +407,11 @@
                             "protein": "19g",
                             "calories": 110,
                             "fat": "0g",
-                            "carbs": "6g"
+                            "carbs": "6g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -314,7 +422,11 @@
                             "protein": "6g",
                             "calories": 150,
                             "fat": "1g",
-                            "carbs": "26g"
+                            "carbs": "26g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -325,7 +437,8 @@
                             "protein": "67g",
                             "calories": 3270,
                             "fat": "53g",
-                            "carbs": "638g"
+                            "carbs": "638g",
+                            "dietary_restrictions": []
                         }
                     },
                     {
@@ -336,7 +449,12 @@
                             "protein": "1g",
                             "calories": 70,
                             "fat": "0g",
-                            "carbs": "18g"
+                            "carbs": "18g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -347,7 +465,11 @@
                             "protein": "0g",
                             "calories": 200,
                             "fat": "4g",
-                            "carbs": "36g"
+                            "carbs": "36g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -358,7 +480,12 @@
                             "protein": "3g",
                             "calories": 100,
                             "fat": "0g",
-                            "carbs": "20g"
+                            "carbs": "20g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -369,7 +496,12 @@
                             "protein": "0g",
                             "calories": 50,
                             "fat": "0g",
-                            "carbs": "14g"
+                            "carbs": "14g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -380,7 +512,12 @@
                             "protein": "0g",
                             "calories": 60,
                             "fat": "0g",
-                            "carbs": "16g"
+                            "carbs": "16g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -391,7 +528,12 @@
                             "protein": "1g",
                             "calories": 130,
                             "fat": "0g",
-                            "carbs": "32g"
+                            "carbs": "32g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -402,7 +544,12 @@
                             "protein": "1g",
                             "calories": 80,
                             "fat": "4.5g",
-                            "carbs": "9g"
+                            "carbs": "9g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -413,7 +560,12 @@
                             "protein": "2g",
                             "calories": 70,
                             "fat": "4.5g",
-                            "carbs": "6g"
+                            "carbs": "6g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -424,7 +576,11 @@
                             "protein": "1g",
                             "calories": 70,
                             "fat": "4g",
-                            "carbs": "9g"
+                            "carbs": "9g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -435,7 +591,11 @@
                             "protein": "2g",
                             "calories": 160,
                             "fat": "4g",
-                            "carbs": "31g"
+                            "carbs": "31g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -446,7 +606,12 @@
                             "protein": "6g",
                             "calories": 180,
                             "fat": "15g",
-                            "carbs": "6g"
+                            "carbs": "6g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -462,7 +627,10 @@
                             "protein": "2g",
                             "calories": 140,
                             "fat": "7g",
-                            "carbs": "18g"
+                            "carbs": "18g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -473,7 +641,11 @@
                             "protein": "3g",
                             "calories": 250,
                             "fat": "12g",
-                            "carbs": "32g"
+                            "carbs": "32g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -484,7 +656,10 @@
                             "protein": "4g",
                             "calories": 300,
                             "fat": "10g",
-                            "carbs": "48g"
+                            "carbs": "48g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -495,7 +670,10 @@
                             "protein": "1g",
                             "calories": 70,
                             "fat": "0.5g",
-                            "carbs": "16g"
+                            "carbs": "16g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     }
                 ]
@@ -511,7 +689,10 @@
                             "protein": "8g",
                             "calories": 230,
                             "fat": "0.5g",
-                            "carbs": "45g"
+                            "carbs": "45g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -522,7 +703,11 @@
                             "protein": "0g",
                             "calories": 80,
                             "fat": "8g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -533,7 +718,11 @@
                             "protein": "1g",
                             "calories": 50,
                             "fat": "4g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -544,7 +733,11 @@
                             "protein": "1g",
                             "calories": 90,
                             "fat": "7g",
-                            "carbs": "6g"
+                            "carbs": "6g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -555,7 +748,11 @@
                             "protein": "2g",
                             "calories": 80,
                             "fat": "8g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -566,7 +763,11 @@
                             "protein": "2g",
                             "calories": 60,
                             "fat": "5g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -577,7 +778,12 @@
                             "protein": "0g",
                             "calories": 50,
                             "fat": "0g",
-                            "carbs": "13g"
+                            "carbs": "13g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -588,7 +794,12 @@
                             "protein": "0g",
                             "calories": 50,
                             "fat": "0g",
-                            "carbs": "13g"
+                            "carbs": "13g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -609,7 +820,10 @@
                             "protein": "5g",
                             "calories": 180,
                             "fat": "18g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -620,7 +834,10 @@
                             "protein": "2g",
                             "calories": 30,
                             "fat": "2.5g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -631,7 +848,12 @@
                             "protein": "7g",
                             "calories": 100,
                             "fat": "7g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -642,7 +864,12 @@
                             "protein": "2g",
                             "calories": 130,
                             "fat": "0.5g",
-                            "carbs": "30g"
+                            "carbs": "30g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -653,7 +880,12 @@
                             "protein": "0g",
                             "calories": 60,
                             "fat": "0g",
-                            "carbs": "14g"
+                            "carbs": "14g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -664,7 +896,12 @@
                             "protein": "3g",
                             "calories": 150,
                             "fat": "3g",
-                            "carbs": "28g"
+                            "carbs": "28g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -675,7 +912,12 @@
                             "protein": "1g",
                             "calories": 60,
                             "fat": "3g",
-                            "carbs": "8g"
+                            "carbs": "8g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -686,7 +928,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -697,7 +944,12 @@
                             "protein": "2g",
                             "calories": 15,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -708,7 +960,12 @@
                             "protein": "0g",
                             "calories": 80,
                             "fat": "5g",
-                            "carbs": "8g"
+                            "carbs": "8g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -719,7 +976,12 @@
                             "protein": "1g",
                             "calories": 25,
                             "fat": "0g",
-                            "carbs": "5g"
+                            "carbs": "5g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -730,7 +992,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -741,7 +1008,12 @@
                             "protein": "1g",
                             "calories": 35,
                             "fat": "0g",
-                            "carbs": "8g"
+                            "carbs": "8g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -757,7 +1029,10 @@
                             "protein": "7g",
                             "calories": 210,
                             "fat": "3g",
-                            "carbs": "35g"
+                            "carbs": "35g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -768,7 +1043,11 @@
                             "protein": "15g",
                             "calories": 220,
                             "fat": "17g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -779,7 +1058,10 @@
                             "protein": "2g",
                             "calories": 30,
                             "fat": "2.5g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -790,7 +1072,10 @@
                             "protein": "7g",
                             "calories": 190,
                             "fat": "18g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -801,7 +1086,12 @@
                             "protein": "2g",
                             "calories": 210,
                             "fat": "15g",
-                            "carbs": "17g"
+                            "carbs": "17g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -812,7 +1102,12 @@
                             "protein": "0g",
                             "calories": 100,
                             "fat": "0g",
-                            "carbs": "26g"
+                            "carbs": "26g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -823,7 +1118,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -834,7 +1134,11 @@
                             "protein": "6g",
                             "calories": 110,
                             "fat": "9g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -845,7 +1149,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -856,7 +1165,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -867,7 +1181,10 @@
                             "protein": "1g",
                             "calories": 30,
                             "fat": "2.5g",
-                            "carbs": "21g"
+                            "carbs": "21g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -878,7 +1195,12 @@
                             "protein": "1g",
                             "calories": 15,
                             "fat": "0g",
-                            "carbs": "5g"
+                            "carbs": "5g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -894,7 +1216,8 @@
                             "protein": "12g",
                             "calories": 230,
                             "fat": "13g",
-                            "carbs": "15g"
+                            "carbs": "15g",
+                            "dietary_restrictions": []
                         }
                     },
                     {
@@ -905,7 +1228,10 @@
                             "protein": "11g",
                             "calories": 180,
                             "fat": "9g",
-                            "carbs": "15g"
+                            "carbs": "15g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -916,7 +1242,11 @@
                             "protein": "6g",
                             "calories": 70,
                             "fat": "4.5g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -927,7 +1257,12 @@
                             "protein": "1g",
                             "calories": 25,
                             "fat": "0g",
-                            "carbs": "6g"
+                            "carbs": "6g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -938,7 +1273,12 @@
                             "protein": "0g",
                             "calories": 35,
                             "fat": "0g",
-                            "carbs": "10g"
+                            "carbs": "10g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -949,7 +1289,12 @@
                             "protein": "0g",
                             "calories": 30,
                             "fat": "0g",
-                            "carbs": "8g"
+                            "carbs": "8g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -965,7 +1310,11 @@
                             "protein": "15g",
                             "calories": 180,
                             "fat": "12g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -976,7 +1325,12 @@
                             "protein": "17g",
                             "calories": 160,
                             "fat": "11g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -987,7 +1341,10 @@
                             "protein": "7g",
                             "calories": 90,
                             "fat": "7g",
-                            "carbs": "0.99g"
+                            "carbs": "0.99g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -998,7 +1355,12 @@
                             "protein": "2g",
                             "calories": 15,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1009,7 +1371,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1020,7 +1387,12 @@
                             "protein": "3g",
                             "calories": 100,
                             "fat": "10g",
-                            "carbs": "4g"
+                            "carbs": "4g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1031,7 +1403,11 @@
                             "protein": "6g",
                             "calories": 110,
                             "fat": "9g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -1047,7 +1423,11 @@
                             "protein": "19g",
                             "calories": 110,
                             "fat": "0g",
-                            "carbs": "6g"
+                            "carbs": "6g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1058,7 +1438,11 @@
                             "protein": "6g",
                             "calories": 150,
                             "fat": "1g",
-                            "carbs": "26g"
+                            "carbs": "26g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1069,7 +1453,8 @@
                             "protein": "67g",
                             "calories": 3270,
                             "fat": "53g",
-                            "carbs": "638g"
+                            "carbs": "638g",
+                            "dietary_restrictions": []
                         }
                     },
                     {
@@ -1080,7 +1465,12 @@
                             "protein": "1g",
                             "calories": 70,
                             "fat": "0g",
-                            "carbs": "18g"
+                            "carbs": "18g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1091,7 +1481,11 @@
                             "protein": "0g",
                             "calories": 200,
                             "fat": "4g",
-                            "carbs": "36g"
+                            "carbs": "36g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -1102,7 +1496,12 @@
                             "protein": "3g",
                             "calories": 100,
                             "fat": "0g",
-                            "carbs": "20g"
+                            "carbs": "20g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1113,7 +1512,12 @@
                             "protein": "0g",
                             "calories": 50,
                             "fat": "0g",
-                            "carbs": "14g"
+                            "carbs": "14g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1124,7 +1528,12 @@
                             "protein": "0g",
                             "calories": 60,
                             "fat": "0g",
-                            "carbs": "16g"
+                            "carbs": "16g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1135,7 +1544,12 @@
                             "protein": "1g",
                             "calories": 130,
                             "fat": "0g",
-                            "carbs": "32g"
+                            "carbs": "32g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1146,7 +1560,12 @@
                             "protein": "1g",
                             "calories": 80,
                             "fat": "4.5g",
-                            "carbs": "9g"
+                            "carbs": "9g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1157,7 +1576,12 @@
                             "protein": "2g",
                             "calories": 70,
                             "fat": "4.5g",
-                            "carbs": "6g"
+                            "carbs": "6g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1168,7 +1592,11 @@
                             "protein": "1g",
                             "calories": 70,
                             "fat": "4g",
-                            "carbs": "9g"
+                            "carbs": "9g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1179,7 +1607,11 @@
                             "protein": "2g",
                             "calories": 160,
                             "fat": "4g",
-                            "carbs": "31g"
+                            "carbs": "31g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1190,7 +1622,12 @@
                             "protein": "6g",
                             "calories": 180,
                             "fat": "15g",
-                            "carbs": "6g"
+                            "carbs": "6g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -1206,7 +1643,10 @@
                             "protein": "2g",
                             "calories": 140,
                             "fat": "7g",
-                            "carbs": "18g"
+                            "carbs": "18g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -1217,7 +1657,11 @@
                             "protein": "3g",
                             "calories": 250,
                             "fat": "12g",
-                            "carbs": "32g"
+                            "carbs": "32g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -1228,7 +1672,10 @@
                             "protein": "4g",
                             "calories": 300,
                             "fat": "10g",
-                            "carbs": "48g"
+                            "carbs": "48g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -1239,7 +1686,10 @@
                             "protein": "1g",
                             "calories": 70,
                             "fat": "0.5g",
-                            "carbs": "16g"
+                            "carbs": "16g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     }
                 ]
@@ -1255,7 +1705,10 @@
                             "protein": "8g",
                             "calories": 230,
                             "fat": "0.5g",
-                            "carbs": "45g"
+                            "carbs": "45g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -1266,7 +1719,11 @@
                             "protein": "0g",
                             "calories": 80,
                             "fat": "8g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1277,7 +1734,11 @@
                             "protein": "1g",
                             "calories": 50,
                             "fat": "4g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1288,7 +1749,11 @@
                             "protein": "1g",
                             "calories": 90,
                             "fat": "7g",
-                            "carbs": "6g"
+                            "carbs": "6g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1299,7 +1764,11 @@
                             "protein": "2g",
                             "calories": 80,
                             "fat": "8g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1310,7 +1779,11 @@
                             "protein": "2g",
                             "calories": 60,
                             "fat": "5g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1321,7 +1794,12 @@
                             "protein": "0g",
                             "calories": 50,
                             "fat": "0g",
-                            "carbs": "13g"
+                            "carbs": "13g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1332,7 +1810,12 @@
                             "protein": "0g",
                             "calories": 50,
                             "fat": "0g",
-                            "carbs": "13g"
+                            "carbs": "13g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -1353,7 +1836,10 @@
                             "protein": "5g",
                             "calories": 180,
                             "fat": "18g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1364,7 +1850,10 @@
                             "protein": "2g",
                             "calories": 30,
                             "fat": "2.5g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1375,7 +1864,12 @@
                             "protein": "7g",
                             "calories": 100,
                             "fat": "7g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1386,7 +1880,12 @@
                             "protein": "2g",
                             "calories": 130,
                             "fat": "0.5g",
-                            "carbs": "30g"
+                            "carbs": "30g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1397,7 +1896,12 @@
                             "protein": "0g",
                             "calories": 60,
                             "fat": "0g",
-                            "carbs": "14g"
+                            "carbs": "14g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1408,7 +1912,12 @@
                             "protein": "3g",
                             "calories": 150,
                             "fat": "3g",
-                            "carbs": "28g"
+                            "carbs": "28g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1419,7 +1928,12 @@
                             "protein": "1g",
                             "calories": 60,
                             "fat": "3g",
-                            "carbs": "8g"
+                            "carbs": "8g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1430,7 +1944,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1441,7 +1960,12 @@
                             "protein": "2g",
                             "calories": 15,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1452,7 +1976,12 @@
                             "protein": "0g",
                             "calories": 80,
                             "fat": "5g",
-                            "carbs": "8g"
+                            "carbs": "8g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1463,7 +1992,12 @@
                             "protein": "1g",
                             "calories": 25,
                             "fat": "0g",
-                            "carbs": "5g"
+                            "carbs": "5g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1474,7 +2008,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1485,7 +2024,12 @@
                             "protein": "1g",
                             "calories": 35,
                             "fat": "0g",
-                            "carbs": "8g"
+                            "carbs": "8g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -1501,7 +2045,12 @@
                             "protein": "0g",
                             "calories": 5,
                             "fat": "0g",
-                            "carbs": "0.7g"
+                            "carbs": "0.7g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1512,7 +2061,12 @@
                             "protein": "2g",
                             "calories": 15,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1523,7 +2077,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1534,7 +2093,12 @@
                             "protein": "0g",
                             "calories": 20,
                             "fat": "0g",
-                            "carbs": "5g"
+                            "carbs": "5g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1545,7 +2109,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1556,7 +2125,12 @@
                             "protein": "1g",
                             "calories": 15,
                             "fat": "0g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1567,7 +2141,12 @@
                             "protein": "0g",
                             "calories": 160,
                             "fat": "18g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1578,7 +2157,12 @@
                             "protein": "0g",
                             "calories": 150,
                             "fat": "18g",
-                            "carbs": "0.54g"
+                            "carbs": "0.54g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1589,7 +2173,12 @@
                             "protein": "0g",
                             "calories": 120,
                             "fat": "14g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1600,7 +2189,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -1616,7 +2210,10 @@
                             "protein": "7g",
                             "calories": 210,
                             "fat": "3g",
-                            "carbs": "35g"
+                            "carbs": "35g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -1627,7 +2224,11 @@
                             "protein": "15g",
                             "calories": 220,
                             "fat": "17g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1638,7 +2239,10 @@
                             "protein": "2g",
                             "calories": 30,
                             "fat": "2.5g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1649,7 +2253,10 @@
                             "protein": "7g",
                             "calories": 190,
                             "fat": "18g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1660,7 +2267,12 @@
                             "protein": "2g",
                             "calories": 210,
                             "fat": "15g",
-                            "carbs": "17g"
+                            "carbs": "17g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1671,7 +2283,12 @@
                             "protein": "0g",
                             "calories": 100,
                             "fat": "0g",
-                            "carbs": "26g"
+                            "carbs": "26g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1682,7 +2299,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1693,7 +2315,11 @@
                             "protein": "6g",
                             "calories": 110,
                             "fat": "9g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1704,7 +2330,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1715,7 +2346,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1726,7 +2362,10 @@
                             "protein": "1g",
                             "calories": 30,
                             "fat": "2.5g",
-                            "carbs": "21g"
+                            "carbs": "21g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1737,7 +2376,12 @@
                             "protein": "1g",
                             "calories": 15,
                             "fat": "0g",
-                            "carbs": "5g"
+                            "carbs": "5g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -1753,7 +2397,10 @@
                             "protein": "6g",
                             "calories": 130,
                             "fat": "4g",
-                            "carbs": "15g"
+                            "carbs": "15g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -1764,7 +2411,8 @@
                             "protein": "8g",
                             "calories": 160,
                             "fat": "7g",
-                            "carbs": "17g"
+                            "carbs": "17g",
+                            "dietary_restrictions": []
                         }
                     },
                     {
@@ -1775,7 +2423,8 @@
                             "protein": "3g",
                             "calories": 170,
                             "fat": "14g",
-                            "carbs": "7g"
+                            "carbs": "7g",
+                            "dietary_restrictions": []
                         }
                     }
                 ]
@@ -1791,7 +2440,11 @@
                             "protein": "15g",
                             "calories": 180,
                             "fat": "12g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1802,7 +2455,12 @@
                             "protein": "17g",
                             "calories": 160,
                             "fat": "11g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1813,7 +2471,10 @@
                             "protein": "7g",
                             "calories": 90,
                             "fat": "7g",
-                            "carbs": "0.99g"
+                            "carbs": "0.99g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1824,7 +2485,12 @@
                             "protein": "2g",
                             "calories": 15,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1835,7 +2501,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1846,7 +2517,12 @@
                             "protein": "3g",
                             "calories": 100,
                             "fat": "10g",
-                            "carbs": "4g"
+                            "carbs": "4g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1857,7 +2533,11 @@
                             "protein": "6g",
                             "calories": 110,
                             "fat": "9g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -1873,7 +2553,12 @@
                             "protein": "2g",
                             "calories": 70,
                             "fat": "1g",
-                            "carbs": "16g"
+                            "carbs": "16g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1884,7 +2569,10 @@
                             "protein": "27g",
                             "calories": 290,
                             "fat": "17g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1895,7 +2583,12 @@
                             "protein": "7g",
                             "calories": 120,
                             "fat": "1g",
-                            "carbs": "22g"
+                            "carbs": "22g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1906,7 +2599,12 @@
                             "protein": "3g",
                             "calories": 120,
                             "fat": "3g",
-                            "carbs": "24g"
+                            "carbs": "24g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1917,7 +2615,12 @@
                             "protein": "1g",
                             "calories": 50,
                             "fat": "4.5g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1928,7 +2631,11 @@
                             "protein": "1g",
                             "calories": 70,
                             "fat": "6g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1939,7 +2646,11 @@
                             "protein": "2g",
                             "calories": 45,
                             "fat": "3g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1950,7 +2661,12 @@
                             "protein": "0g",
                             "calories": 5,
                             "fat": "0g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1961,7 +2677,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1972,7 +2693,12 @@
                             "protein": "0g",
                             "calories": 20,
                             "fat": "1.5g",
-                            "carbs": "0.9g"
+                            "carbs": "0.9g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -1988,7 +2714,12 @@
                             "protein": "3g",
                             "calories": 160,
                             "fat": "2g",
-                            "carbs": "32g"
+                            "carbs": "32g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -1999,7 +2730,12 @@
                             "protein": "2g",
                             "calories": 120,
                             "fat": "0g",
-                            "carbs": "27g"
+                            "carbs": "27g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2010,7 +2746,10 @@
                             "protein": "25g",
                             "calories": 270,
                             "fat": "16g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2021,7 +2760,10 @@
                             "protein": "1g",
                             "calories": 20,
                             "fat": "0g",
-                            "carbs": "5g"
+                            "carbs": "5g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2032,7 +2774,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2043,7 +2790,12 @@
                             "protein": "1g",
                             "calories": 20,
                             "fat": "0.5g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2054,7 +2806,12 @@
                             "protein": "2g",
                             "calories": 60,
                             "fat": "6g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2065,7 +2822,12 @@
                             "protein": "0g",
                             "calories": 30,
                             "fat": "0g",
-                            "carbs": "7g"
+                            "carbs": "7g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2076,7 +2838,12 @@
                             "protein": "1g",
                             "calories": 100,
                             "fat": "11g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2087,7 +2854,12 @@
                             "protein": "0g",
                             "calories": 15,
                             "fat": "0.5g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2098,7 +2870,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0.74g"
+                            "carbs": "0.74g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2109,7 +2886,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -2125,7 +2907,10 @@
                             "protein": "2g",
                             "calories": 140,
                             "fat": "7g",
-                            "carbs": "18g"
+                            "carbs": "18g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -2136,7 +2921,11 @@
                             "protein": "3g",
                             "calories": 250,
                             "fat": "12g",
-                            "carbs": "32g"
+                            "carbs": "32g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -2147,7 +2936,10 @@
                             "protein": "4g",
                             "calories": 300,
                             "fat": "10g",
-                            "carbs": "48g"
+                            "carbs": "48g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -2158,7 +2950,10 @@
                             "protein": "1g",
                             "calories": 70,
                             "fat": "0.5g",
-                            "carbs": "16g"
+                            "carbs": "16g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     }
                 ]
@@ -2174,7 +2969,10 @@
                             "protein": "8g",
                             "calories": 230,
                             "fat": "0.5g",
-                            "carbs": "45g"
+                            "carbs": "45g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -2185,7 +2983,11 @@
                             "protein": "0g",
                             "calories": 80,
                             "fat": "8g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2196,7 +2998,11 @@
                             "protein": "1g",
                             "calories": 50,
                             "fat": "4g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2207,7 +3013,11 @@
                             "protein": "1g",
                             "calories": 90,
                             "fat": "7g",
-                            "carbs": "6g"
+                            "carbs": "6g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2218,7 +3028,11 @@
                             "protein": "2g",
                             "calories": 80,
                             "fat": "8g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2229,7 +3043,11 @@
                             "protein": "2g",
                             "calories": 60,
                             "fat": "5g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2240,7 +3058,12 @@
                             "protein": "0g",
                             "calories": 50,
                             "fat": "0g",
-                            "carbs": "13g"
+                            "carbs": "13g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2251,7 +3074,12 @@
                             "protein": "0g",
                             "calories": 50,
                             "fat": "0g",
-                            "carbs": "13g"
+                            "carbs": "13g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -2272,7 +3100,10 @@
                             "protein": "22g",
                             "calories": 120,
                             "fat": "2.5g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2283,7 +3114,12 @@
                             "protein": "2g",
                             "calories": 110,
                             "fat": "1g",
-                            "carbs": "23g"
+                            "carbs": "23g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2294,7 +3130,12 @@
                             "protein": "2g",
                             "calories": 20,
                             "fat": "0g",
-                            "carbs": "4g"
+                            "carbs": "4g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -2310,7 +3151,10 @@
                             "protein": "17g",
                             "calories": 210,
                             "fat": "6g",
-                            "carbs": "23g"
+                            "carbs": "23g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2321,7 +3165,12 @@
                             "protein": "2g",
                             "calories": 120,
                             "fat": "0g",
-                            "carbs": "27g"
+                            "carbs": "27g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2332,7 +3181,12 @@
                             "protein": "4g",
                             "calories": 140,
                             "fat": "3g",
-                            "carbs": "29g"
+                            "carbs": "29g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2343,7 +3197,12 @@
                             "protein": "0g",
                             "calories": 20,
                             "fat": "1.5g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2354,7 +3213,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -2370,7 +3234,12 @@
                             "protein": "0g",
                             "calories": 5,
                             "fat": "0g",
-                            "carbs": "0.7g"
+                            "carbs": "0.7g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2381,7 +3250,12 @@
                             "protein": "2g",
                             "calories": 15,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2392,7 +3266,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2403,7 +3282,12 @@
                             "protein": "0g",
                             "calories": 20,
                             "fat": "0g",
-                            "carbs": "5g"
+                            "carbs": "5g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2414,7 +3298,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2425,7 +3314,12 @@
                             "protein": "1g",
                             "calories": 15,
                             "fat": "0g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2436,7 +3330,12 @@
                             "protein": "0g",
                             "calories": 160,
                             "fat": "18g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2447,7 +3346,12 @@
                             "protein": "0g",
                             "calories": 150,
                             "fat": "18g",
-                            "carbs": "0.54g"
+                            "carbs": "0.54g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2458,7 +3362,12 @@
                             "protein": "0g",
                             "calories": 120,
                             "fat": "14g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2469,7 +3378,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -2485,7 +3399,8 @@
                             "protein": "26g",
                             "calories": 290,
                             "fat": "18g",
-                            "carbs": "6g"
+                            "carbs": "6g",
+                            "dietary_restrictions": []
                         }
                     },
                     {
@@ -2496,7 +3411,11 @@
                             "protein": "2g",
                             "calories": 70,
                             "fat": "3g",
-                            "carbs": "9g"
+                            "carbs": "9g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2507,7 +3426,11 @@
                             "protein": "1g",
                             "calories": 120,
                             "fat": "2.5g",
-                            "carbs": "25g"
+                            "carbs": "25g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2518,7 +3441,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2529,7 +3457,11 @@
                             "protein": "9g",
                             "calories": 110,
                             "fat": "8g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2540,7 +3472,12 @@
                             "protein": "1g",
                             "calories": 30,
                             "fat": "2g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2551,7 +3488,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -2567,7 +3509,10 @@
                             "protein": "6g",
                             "calories": 130,
                             "fat": "4g",
-                            "carbs": "15g"
+                            "carbs": "15g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -2578,7 +3523,8 @@
                             "protein": "8g",
                             "calories": 160,
                             "fat": "7g",
-                            "carbs": "17g"
+                            "carbs": "17g",
+                            "dietary_restrictions": []
                         }
                     },
                     {
@@ -2589,7 +3535,8 @@
                             "protein": "3g",
                             "calories": 170,
                             "fat": "14g",
-                            "carbs": "7g"
+                            "carbs": "7g",
+                            "dietary_restrictions": []
                         }
                     }
                 ]
@@ -2605,7 +3552,12 @@
                             "protein": "2g",
                             "calories": 170,
                             "fat": "5g",
-                            "carbs": "27g"
+                            "carbs": "27g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2616,7 +3568,12 @@
                             "protein": "1g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "0.89g"
+                            "carbs": "0.89g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2627,7 +3584,10 @@
                             "protein": "6g",
                             "calories": 210,
                             "fat": "10g",
-                            "carbs": "21g"
+                            "carbs": "21g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -2638,7 +3598,10 @@
                             "protein": "11g",
                             "calories": 110,
                             "fat": "6g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2649,7 +3612,12 @@
                             "protein": "3g",
                             "calories": 100,
                             "fat": "10g",
-                            "carbs": "4g"
+                            "carbs": "4g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2660,7 +3628,12 @@
                             "protein": "1g",
                             "calories": 15,
                             "fat": "0g",
-                            "carbs": "5g"
+                            "carbs": "5g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2671,7 +3644,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2682,7 +3660,11 @@
                             "protein": "4g",
                             "calories": 50,
                             "fat": "4g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2693,7 +3675,11 @@
                             "protein": "0g",
                             "calories": 80,
                             "fat": "8g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -2709,7 +3695,12 @@
                             "protein": "2g",
                             "calories": 70,
                             "fat": "1g",
-                            "carbs": "16g"
+                            "carbs": "16g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2720,7 +3711,10 @@
                             "protein": "27g",
                             "calories": 290,
                             "fat": "17g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2731,7 +3725,12 @@
                             "protein": "7g",
                             "calories": 120,
                             "fat": "1g",
-                            "carbs": "22g"
+                            "carbs": "22g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2742,7 +3741,12 @@
                             "protein": "3g",
                             "calories": 120,
                             "fat": "3g",
-                            "carbs": "24g"
+                            "carbs": "24g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2753,7 +3757,12 @@
                             "protein": "1g",
                             "calories": 50,
                             "fat": "4.5g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2764,7 +3773,11 @@
                             "protein": "1g",
                             "calories": 70,
                             "fat": "6g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2775,7 +3788,11 @@
                             "protein": "2g",
                             "calories": 45,
                             "fat": "3g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2786,7 +3803,12 @@
                             "protein": "0g",
                             "calories": 5,
                             "fat": "0g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2797,7 +3819,12 @@
                             "protein": "0g",
                             "calories": 10,
                             "fat": "0g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2808,7 +3835,12 @@
                             "protein": "0g",
                             "calories": 20,
                             "fat": "1.5g",
-                            "carbs": "0.9g"
+                            "carbs": "0.9g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -2824,7 +3856,12 @@
                             "protein": "3g",
                             "calories": 160,
                             "fat": "2g",
-                            "carbs": "32g"
+                            "carbs": "32g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2835,7 +3872,12 @@
                             "protein": "2g",
                             "calories": 120,
                             "fat": "0g",
-                            "carbs": "27g"
+                            "carbs": "27g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2846,7 +3888,10 @@
                             "protein": "25g",
                             "calories": 270,
                             "fat": "16g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2857,7 +3902,10 @@
                             "protein": "1g",
                             "calories": 20,
                             "fat": "0g",
-                            "carbs": "5g"
+                            "carbs": "5g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2868,7 +3916,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2879,7 +3932,12 @@
                             "protein": "1g",
                             "calories": 20,
                             "fat": "0.5g",
-                            "carbs": "3g"
+                            "carbs": "3g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2890,7 +3948,12 @@
                             "protein": "2g",
                             "calories": 60,
                             "fat": "6g",
-                            "carbs": "1g"
+                            "carbs": "1g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2901,7 +3964,12 @@
                             "protein": "0g",
                             "calories": 30,
                             "fat": "0g",
-                            "carbs": "7g"
+                            "carbs": "7g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2912,7 +3980,12 @@
                             "protein": "1g",
                             "calories": 100,
                             "fat": "11g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2923,7 +3996,12 @@
                             "protein": "0g",
                             "calories": 15,
                             "fat": "0.5g",
-                            "carbs": "2g"
+                            "carbs": "2g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2934,7 +4012,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0.74g"
+                            "carbs": "0.74g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2945,7 +4028,12 @@
                             "protein": "0g",
                             "calories": 0,
                             "fat": "0g",
-                            "carbs": "0g"
+                            "carbs": "0g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -2961,7 +4049,10 @@
                             "protein": "1g",
                             "calories": 130,
                             "fat": "2g",
-                            "carbs": "25g"
+                            "carbs": "25g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -2972,7 +4063,11 @@
                             "protein": "0g",
                             "calories": 290,
                             "fat": "16g",
-                            "carbs": "38g"
+                            "carbs": "38g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -2983,7 +4078,10 @@
                             "protein": "46g",
                             "calories": 3710,
                             "fat": "169g",
-                            "carbs": "509g"
+                            "carbs": "509g",
+                            "dietary_restrictions": [
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -2994,7 +4092,11 @@
                             "protein": "1g",
                             "calories": 150,
                             "fat": "4g",
-                            "carbs": "28g"
+                            "carbs": "28g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian"
+                            ]
                         }
                     }
                 ]
@@ -3010,7 +4112,12 @@
                             "protein": "0g",
                             "calories": 60,
                             "fat": "2g",
-                            "carbs": "9g"
+                            "carbs": "9g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -3021,7 +4128,12 @@
                             "protein": "0g",
                             "calories": 60,
                             "fat": "3g",
-                            "carbs": "9g"
+                            "carbs": "9g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -3032,7 +4144,12 @@
                             "protein": "1g",
                             "calories": 70,
                             "fat": "4g",
-                            "carbs": "8g"
+                            "carbs": "8g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -3043,7 +4160,12 @@
                             "protein": "7g",
                             "calories": 170,
                             "fat": "14g",
-                            "carbs": "6g"
+                            "carbs": "6g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -3054,7 +4176,11 @@
                             "protein": "1g",
                             "calories": 70,
                             "fat": "4g",
-                            "carbs": "9g"
+                            "carbs": "9g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -3065,7 +4191,10 @@
                             "protein": "0g",
                             "calories": 20,
                             "fat": "0g",
-                            "carbs": "5g"
+                            "carbs": "5g",
+                            "dietary_restrictions": [
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -3076,7 +4205,11 @@
                             "protein": "2g",
                             "calories": 140,
                             "fat": "6g",
-                            "carbs": "20g"
+                            "carbs": "20g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -3087,7 +4220,11 @@
                             "protein": "0g",
                             "calories": 60,
                             "fat": "2g",
-                            "carbs": "10g"
+                            "carbs": "10g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian"
+                            ]
                         }
                     },
                     {
@@ -3098,7 +4235,12 @@
                             "protein": "1g",
                             "calories": 190,
                             "fat": "0.5g",
-                            "carbs": "44g"
+                            "carbs": "44g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]
@@ -3114,7 +4256,11 @@
                             "protein": "19g",
                             "calories": 110,
                             "fat": "0g",
-                            "carbs": "6g"
+                            "carbs": "6g",
+                            "dietary_restrictions": [
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -3125,7 +4271,12 @@
                             "protein": "1g",
                             "calories": 25,
                             "fat": "0g",
-                            "carbs": "6g"
+                            "carbs": "6g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     },
                     {
@@ -3136,7 +4287,12 @@
                             "protein": "0g",
                             "calories": 35,
                             "fat": "0g",
-                            "carbs": "10g"
+                            "carbs": "10g",
+                            "dietary_restrictions": [
+                                "vegan",
+                                "vegitarian",
+                                "gluten"
+                            ]
                         }
                     }
                 ]

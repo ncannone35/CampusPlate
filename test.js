@@ -2,7 +2,7 @@
 const GA = require('./ga.js')
 require('dotenv').config()
 
-const recipes = require('./nutrition.json')
+const recipes = require('./modified_nutrition.json')
 
 let possibles = []
 let population = []
@@ -82,7 +82,7 @@ function fitness(h) {
     const diffFat = Math.abs(fat - GOAL_FAT);
     const diffCarbs = Math.abs(carbs - GOAL_CARBS);
 
-    const totalDifference = (GOAL_CALORIES - diffCalories) * (GOAL_PROTEIN - diffProtein) * ((GOAL_FAT - diffFat) / 100) * ((GOAL_CARBS - diffCarbs) / 100)
+    const totalDifference = (GOAL_CALORIES - diffCalories) + (GOAL_PROTEIN - diffProtein) + ((GOAL_FAT - diffFat) / 100) + ((GOAL_CARBS - diffCarbs) / 100)
     //return totalDifference
     const fit = (1 / diffCalories) + (1 / diffProtein) + (1 / diffFat) + (1 / diffCarbs)
     return fit

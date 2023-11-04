@@ -38,6 +38,7 @@ function writeJsonToFile(jsonObject, filename = 'modified_nutrition.json') {
     }
   });
 }
+
 function generate_possible_meals(meals_list) {
     let generated_meals = []
     const HIGH_CALORIE_THRESHOLD = 100
@@ -123,10 +124,12 @@ function format_meals(meals) {
         
         let meal_json = {
             ingredients: ingredients,
-            calories: cals,
-            protein: protein,
-            carbs: carbs,
-            fat: fat
+            info: {
+                calories: cals,
+                protein: protein,
+                carbs: carbs,
+                fat: fat
+            }
         }
         formatted_meals.push(meal_json)
     }
