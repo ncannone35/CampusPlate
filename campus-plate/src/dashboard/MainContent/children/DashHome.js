@@ -90,11 +90,10 @@ const DashHome = ({ preferences }) => {
   const handleGenerate = async (e) => {
     e.preventDefault();
     try {
-      const request = {
-
-        
-      };
-      const { data } = await axios.get("/api/generatemeal", request);
+      const request = {};
+      const { data } = await axios.get("/api/generatemeal", {
+        params: { GOAL_PROTEIN: 150, GOAL_CALORIES: 2000 },
+      });
       if (data) {
         setMeals(data);
       }
