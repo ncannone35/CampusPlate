@@ -23,6 +23,9 @@ const BackgroundVideo = () => {
             transform: translate(-50%, -50%);
           }
         `}</style>
+
+
+        <div className="w-full h-full bg-black absolute opacity-50"> </div> 
       </div>
     );
   };

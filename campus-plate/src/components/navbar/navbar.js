@@ -14,19 +14,21 @@ const NavBar = () => {
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
   return (
-    <div id="navBarContainer" style={{ backgroundColor: 'rgba(255, 255, 255, 0.7)' }} className="fixed top-0 w-full">
+        <div id="navBarContainer" style={{ backgroundColor: 'rgba(255, 255, 255, 0)' }} className="fixed top-0 w-full">
+
+    {/* <div id="navBarContainer" style={{ backgroundColor: 'rgba(255, 255, 255, 0.7)' }} className="fixed top-0 w-full"> */}
       <div
         id="contentWrapper"
         className="flex flex-row justify-between items-center px-[100px] py-[30px]"
       >
         <div id="logo" className="">
-          <Image src={logoImg} alt="CampusPlate Logo" width={200} height={100} />
+          <Image src={logoImg} alt="CampusPlate Logo" width={200} height={100} className="rounded-xl" />
           {/* <span className="text-2xl font-semibold">CampusPlate</span> */}
         </div>
         <div id="userSection" className="relative">
           {user ? (
             <>
-              <button onClick={toggleDropdown} className="flex items-center space-x-[10px]">
+              <button onClick={toggleDropdown} className="flex items-center space-x-[10px] text-white">
                 <span className="text-xl font-semibold">{"Welcome " + user.name + "!"}</span>
                 <img src={user.picture} alt={user.name} className="rounded-full h-10 w-10" />
               </button>

@@ -102,7 +102,7 @@ const DashHome = ({ preferences }) => {
 
           <section className="py-[30px]">
             <ViewMealTab
-              meals={meals.food}
+              meals={meals.foods}
               mealSelectd={mealSelected}
               setMealSelected={setMealSelected}
             />
@@ -124,7 +124,7 @@ const DashHome = ({ preferences }) => {
         </div>
 
         <div id="mealPlanSection" className="border- mt-[20px]">
-          <MealPlan meal={meals[mealSelected]} />
+          <MealPlan meal={meals.foods[mealSelected]} />
         </div>
       </div>
     </>

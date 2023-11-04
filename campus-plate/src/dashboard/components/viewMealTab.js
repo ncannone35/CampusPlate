@@ -33,7 +33,10 @@ const ViewMealTab = ({ meals, mealSelectd, setMealSelected }) => {
                   <path d="M3 8c0-3.5 2.5-6 6.5-6 5 0 4.83 3 7.5 5s5 2 5 6c0 4.5-2.5 6.5-7 6.5-2.5 0-2.5 2.5-6 2.5s-7-2-7-5.5c0-3 1.5-3 1.5-5C3.5 10 3 9 3 8Z" />
                 </svg>
               </a>
-              <h1 className="text-lg capitalize tracking-wide"> {meal}</h1>
+              <h1 className="text-lg capitalize tracking-wide">
+                {" "}
+                {meal.time.split(" ")[0]}
+              </h1>
             </a>
           )}
           {index === 1 && (
@@ -67,7 +70,10 @@ const ViewMealTab = ({ meals, mealSelectd, setMealSelected }) => {
                   <path d="M10.9 7.25A3.99 3.99 0 0 0 4 10c0 .73.2 1.41.54 2" />
                 </svg>
               </a>
-              <h1 className="text-lg capitalize tracking-wide"> {meal}</h1>
+              <h1 className="text-lg capitalize tracking-wide">
+                {" "}
+                {meal.time.split(" ")[0]}
+              </h1>{" "}
             </a>
           )}
           {index === 2 && (
@@ -101,7 +107,10 @@ const ViewMealTab = ({ meals, mealSelectd, setMealSelected }) => {
                   <path d="M5.71 17.11a17.04 17.04 0 0 1 11.4-11.4" />
                 </svg>
               </a>
-              <h1 className="text-lg capitalize tracking-wide"> {meal}</h1>
+              <h1 className="text-lg capitalize tracking-wide">
+                {" "}
+                {meal.time.split(" ")[0]}
+              </h1>{" "}
             </a>
           )}
           {index !== 1 && index !== 2 && index !== 0 && (
@@ -134,7 +143,10 @@ const ViewMealTab = ({ meals, mealSelectd, setMealSelected }) => {
                   <path d="M12.97 19.77 7 15h12.5l-3.75 4.5a2 2 0 0 1-2.78.27Z" />
                 </svg>
               </a>
-              <h1 className="text-lg capitalize tracking-wide"> {meal}</h1>
+              <h1 className="text-lg capitalize tracking-wide">
+                {" "}
+                {meal.time.split(" ")[0]}
+              </h1>{" "}
             </a>
           )}
         </div>
