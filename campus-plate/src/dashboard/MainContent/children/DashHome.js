@@ -1,11 +1,12 @@
 import MealPlan from "@/dashboard/components/mealPlan";
 import { useState } from "react";
 import ViewMealTab from "@/dashboard/components/viewMealTab";
+import axios from "axios";
 
 const DashHome = ({ preferences }) => {
   const [date, setDate] = useState(new Date());
 
-  const meals = {
+  const mealsTesting = {
     foods: [
       {
         time: "Breakfast (9am-10:30am)",
@@ -84,6 +85,24 @@ const DashHome = ({ preferences }) => {
   };
   const [mealSelected, setMealSelected] = useState(0);
 
+  const [meals, setMeals] = useState(mealsTesting);
+
+  const handleGenerate = async (e) => {
+    e.preventDefault();
+    try {
+      const request = {
+
+        
+      };
+      const { data } = await axios.get("/api/generatemeal", request);
+      if (data) {
+        setMeals(data);
+      }
+    } catch (error) {
+      console.log("something is wwrong");
+    }
+  };
+
   return (
     <>
       <div className="flex flex-col">
@@ -101,11 +120,13 @@ const DashHome = ({ preferences }) => {
           </h2>
 
           <section className="py-[30px]">
-            <ViewMealTab
-              meals={meals.foods}
-              mealSelectd={mealSelected}
-              setMealSelected={setMealSelected}
-            />
+            {meals !== null && (
+              <ViewMealTab
+                meals={meals.foods}
+                mealSelectd={mealSelected}
+                setMealSelected={setMealSelected}
+              />
+            )}
           </section>
 
           <div
@@ -116,7 +137,10 @@ const DashHome = ({ preferences }) => {
               Your suggested meal plan is below
             </h1>
 
-            <button className="tracking-widest text-base font-semibold border- px-2 py-[2px] rounded-3xl bg- text-[#fbbf24] hover:text-white bg-white hover:bg-[#fbbf24] transition-colors border-2 border-heavy">
+            <button
+              onClick={handleGenerate}
+              className="tracking-widest text-base font-semibold border- px-2 py-[2px] rounded-3xl bg- text-[#fbbf24] hover:text-white bg-white hover:bg-[#fbbf24] transition-colors border-2 border-heavy"
+            >
               {" "}
               Generate{" "}
             </button>
@@ -124,7 +148,7 @@ const DashHome = ({ preferences }) => {
         </div>
 
         <div id="mealPlanSection" className="border- mt-[20px]">
-          <MealPlan meal={meals.foods[mealSelected]} />
+          {meals !== null && <MealPlan meal={meals?.foods?.[mealSelected]} />}
         </div>
       </div>
     </>
