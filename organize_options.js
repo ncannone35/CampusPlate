@@ -1,4 +1,6 @@
 'use strict'
+const fs = require('fs').promises
+const { write } = require('fs')
 var nutrition = require('./nutrition.json')
 
 // console.log(JSON.stringify(nutrition))
@@ -18,23 +20,35 @@ for(let meal_time of nutrition) {
             removed_items.sort((a,b) => a.calories - b.calories)
             let generated_meals = generate_possible_meals(removed_items)
             let new_meal_format = format_meals(generated_meals)
+            place.meals = new_meal_format
 
-            console.log(new_meal_format)
         }
     }
 }
+writeJsonToFile(nutrition)
 
+function writeJsonToFile(jsonObject, filename = 'modified_nutrition.json') {
+  const jsonString = JSON.stringify(jsonObject, null, 2); // The second argument adds indentation for a more readable file
+
+  fs.writeFile(filename, jsonString, 'utf8', (err) => {
+    if (err) {
+      console.error('Error writing to the file:', err);
+    } else {
+      console.log(`JSON object has been written to ${filename}`);
+    }
+  });
+}
 function generate_possible_meals(meals_list) {
     let generated_meals = []
     const HIGH_CALORIE_THRESHOLD = 100
     let high_calorie_meals = []
     let low_calorie_meals = []
-    let rice_cals = 0 
-    let rice_protein = ''
-    let rice_fat = ''
-    let rice_carbs = ''
-    let contains_rice = false
     for (let i = 0; i < meals_list.length; i++){
+        let rice_cals = 0 
+        let rice_protein = ''
+        let rice_fat = ''
+        let rice_carbs = ''
+        let contains_rice = false
         if(meals_list[i].info.calories > 110) {
             if(meals_list[i].info.name.includes("Rice") ) {
                 contains_rice = true
@@ -49,10 +63,12 @@ function generate_possible_meals(meals_list) {
         if(contains_rice) {
             let rice = {
                 name: 'Choice of Rice',
-                calories: rice_cals,
-                protein: rice_protein,
-                fat: rice_fat,
-                carbs: rice_carbs
+                info: {
+                    calories: rice_cals,
+                    protein: rice_protein,
+                    fat: rice_fat,
+                    carbs: rice_carbs
+                }
             }
             high_calorie_meals.push(rice)
         }
@@ -96,11 +112,13 @@ function format_meals(meals) {
         let carbs = '0g'
         let fat = '0g'
         for(let ingredient of meal) {
-            ingredients.push(ingredient.name)
-            cals = cals + ingredient.info.calories
-            protein = addGrams([ingredient.info.protein, protein])
-            carbs = addGrams([ingredient.info.carbs, carbs])
-            fat = addGrams([ingredient.info.fat, fat])
+            if(!(ingredient.name == 'Choice of Rice' && ingredients.includes('Choice of Rice'))) {
+                ingredients.push(ingredient.name)
+                cals = cals + ingredient.info.calories
+                protein = addGrams([ingredient.info.protein, protein])
+                carbs = addGrams([ingredient.info.carbs, carbs])
+                fat = addGrams([ingredient.info.fat, fat])
+            }
         }
         
         let meal_json = {
