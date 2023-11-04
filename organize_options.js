@@ -14,29 +14,8 @@ for(let meal_time of nutrition) {
                 removed_items.push(all_meals[i])
             }
         }
+        removed_items.sort((a,b) => a.calories - b.calories)
         console.log(removed_items)
         // const combinations = generate_meal_combos(all_meals)
     }
-}
-
-function generate_meal_combos(inputList) {
-    if (inputList.length === 0) {
-    return [[]]; // Return an array containing an empty list as the base case.
-  }
-
-  const [currentObject, ...restObjects] = inputList;
-  const combinationsOfRest = generate_meal_combos(restObjects);
-
-  const result = [];
-
-  for (const combination of combinationsOfRest) {
-    for (let i = 0; i <= combination.length; i++) {
-      const newCombination = [...combination.slice(0, i), currentObject, ...combination.slice(i)];
-      result.push(newCombination);
-      console.log(result)
-    }
-  }
-
-  return result;
-
 }
