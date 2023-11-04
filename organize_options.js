@@ -5,31 +5,57 @@ var nutrition = require('./nutrition.json')
 
 for(let meal_time of nutrition) {
     for(let place of meal_time.places) {
-        let all_meals = [...place.meals]
-        let removed_items = []
-        for (let i = 0; i < all_meals.length; i++){
-            // get rid of 0 cal 0 protein items
-            if(!(all_meals[i].info.protein == '0g' && all_meals[i].info.calories == 0)) {
-                // console.log(all_meals[i])
-                removed_items.push(all_meals[i])
+        if(!(place.name == 'Ice Cream')) {
+            let all_meals = [...place.meals]
+            let removed_items = []
+            for (let i = 0; i < all_meals.length; i++){
+                // get rid of 0 cal 0 protein items
+                if(!(all_meals[i].info.protein == '0g' && all_meals[i].info.calories == 0)) {
+                    // console.log(all_meals[i])
+                    removed_items.push(all_meals[i])
+                }
             }
-        }
-        removed_items.sort((a,b) => a.calories - b.calories)
-        let generated_meals = generate_possible_meals(removed_items)
+            removed_items.sort((a,b) => a.calories - b.calories)
+            let generated_meals = generate_possible_meals(removed_items)
+            let new_meal_format = format_meals(generated_meals)
 
-        console.log(removed_items)
-        // const combinations = generate_meal_combos(all_meals)
+            console.log(new_meal_format)
+        }
     }
 }
 
 function generate_possible_meals(meals_list) {
-    let generated_meals = [[]]
+    let generated_meals = []
     const HIGH_CALORIE_THRESHOLD = 100
     let high_calorie_meals = []
     let low_calorie_meals = []
+    let rice_cals = 0 
+    let rice_protein = ''
+    let rice_fat = ''
+    let rice_carbs = ''
+    let contains_rice = false
     for (let i = 0; i < meals_list.length; i++){
         if(meals_list[i].info.calories > 110) {
-            high_calorie_meals.push(meals_list[i])
+            if(meals_list[i].info.name.includes("Rice") ) {
+                contains_rice = true
+                rice_cals = meals_list[i].info.calories
+                rice_carbs = meals_list[i].info.carbs 
+                rice_protein = meals_list[i].info.protein
+                rice_fat = meals_list[i].info.fat 
+
+            }else {
+                high_calorie_meals.push(meals_list[i])
+            }
+        if(contains_rice) {
+            let rice = {
+                name: 'Choice of Rice',
+                calories: rice_cals,
+                protein: rice_protein,
+                fat: rice_fat,
+                carbs: rice_carbs
+            }
+            high_calorie_meals.push(rice)
+        }
         }
         else{
             low_calorie_meals.push(meals_list[i])
@@ -39,9 +65,8 @@ function generate_possible_meals(meals_list) {
     for(let combos of low_cal_combos) {
         let high_cal_copy = high_calorie_meals
         let meal = high_cal_copy.concat(combos)
-        generated_meals.concat(meal)
+        generated_meals.push(meal)
     } 
-    console.log(generated_meals)
     return generated_meals
 }
 
@@ -58,4 +83,48 @@ function allCombinations(arr) {
   combine([], arr);
 
   return result;
+}
+
+function format_meals(meals) {
+    let formatted_meals = []
+    for(let i = 0; i < meals.length; i++) {
+        let meal = meals[i]
+        // concatenate ingredients of a meal, add all of the cals and protein up
+        let ingredients = []
+        let cals = 0
+        let protein = '0g'
+        let carbs = '0g'
+        let fat = '0g'
+        for(let ingredient of meal) {
+            ingredients.push(ingredient.name)
+            cals = cals + ingredient.info.calories
+            protein = addGrams([ingredient.info.protein, protein])
+            carbs = addGrams([ingredient.info.carbs, carbs])
+            fat = addGrams([ingredient.info.fat, fat])
+        }
+        
+        let meal_json = {
+            ingredients: ingredients,
+            calories: cals,
+            protein: protein,
+            carbs: carbs,
+            fat: fat
+        }
+        formatted_meals.push(meal_json)
+    }
+    // console.log(formatted_meals)
+    return formatted_meals
+}
+
+function addGrams(strings) {
+  let totalGrams = 0;
+
+  for (const str of strings) {
+    const match = str.match(/(\d+)g/);
+    if (match) {
+      const grams = parseInt(match[1]);
+      totalGrams += grams;
+    }
+  }
+  return `${totalGrams}g`;
 }
