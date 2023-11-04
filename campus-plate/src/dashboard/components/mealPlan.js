@@ -42,7 +42,7 @@ const MealPlan = ({ meal }) => {
                 index % 2 == 0 ? "bg-bgColor" : "bg-standout"
               )}
             >
-              <a>{item}</a> <a> I had this </a>
+              <a className="font-semibold">{item}</a> <a> I had this </a>
             </li>
           ))}
         </ul>
