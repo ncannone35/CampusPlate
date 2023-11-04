@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { useUser } from "@auth0/nextjs-auth0/client";
 import { useState } from 'react';
+import logoImg from '../../../public/logo.png';
+
 
 const NavBar = () => {
   const { user, error, isLoading } = useUser();
@@ -12,13 +14,14 @@ const NavBar = () => {
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
   return (
-    <div id="navBarContainer" className="bg-white sticky top-0 w-full border-2">
+    <div id="navBarContainer" style={{ backgroundColor: 'rgba(255, 255, 255, 0.7)' }} className="fixed top-0 w-full">
       <div
         id="contentWrapper"
         className="flex flex-row justify-between items-center px-[100px] py-[30px]"
       >
         <div id="logo" className="">
-          <span className="text-2xl font-semibold">CampusPlate</span>
+          <Image src={logoImg} alt="CampusPlate Logo" width={200} height={100} />
+          {/* <span className="text-2xl font-semibold">CampusPlate</span> */}
         </div>
         <div id="userSection" className="relative">
           {user ? (
