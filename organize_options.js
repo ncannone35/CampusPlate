@@ -123,10 +123,12 @@ function format_meals(meals) {
         
         let meal_json = {
             ingredients: ingredients,
-            calories: cals,
-            protein: protein,
-            carbs: carbs,
-            fat: fat
+            info: {
+              calories: cals,
+              protein: protein,
+              carbs: carbs,
+              fat: fat
+            }
         }
         formatted_meals.push(meal_json)
     }
