@@ -13,7 +13,7 @@ function currDateString() {
 }
 
 
-generateNutritionFile('nutrition.json')
+//generateNutritionFile('nutrition.json')
 
 async function generateNutritionFile(path) {
     console.log("Generating nutrition file...this will take a minute")
@@ -55,11 +55,7 @@ function getMealsByTime() {
                     info: getRecipeAtIndex($c.attr('data-recipe'))
                 })
             })
-            /*console.log(times[i])
-            for(let place of times[i].places){
-              console.log(place)
-            }
-            */
+
         })
         $n.find('.toggle-menu-station-data').each((k, em) => {
             times[i].places[k].name = $(em).text()
@@ -78,16 +74,14 @@ function getRecipeAtIndex(i) {
     let res = request('POST', `${recipeUrl}${i}`)
     let data = JSON.parse(res.getBody('utf8'))
     if (!data.success) return {}
-    //we don't like whitespace in this household
     data.html = data.html.replace(/\s/g, '')
 
 
-    //fuck html, lets just hope that the responses are consistent (fingers crossed emoji)
     let name = data.html.split('<h2>')[1].split('</h2>')[0]
     let protein = data.html.split('Protein</b>')[1].split('</th>')[0]
     let cals = data.html.split('Calories')[1]
     let fat = data.html.split('TotalFat</b>')[1].split('</th>')[0]
-    let carbs = data.html.split('TotalCarbohydrate</b>')[1].split('</th>')[0]
+    let carbs = data.html.split('TotalCarbohydrates</b>')[1].split('</th>')[0]
     cals = cals.split('</th>')[0]
     cals = cals.slice(4)
 
@@ -105,7 +99,7 @@ function getRecipeAtIndex(i) {
 }
 
 module.exports = {
-
+    getMealsByTime,
     getRecipeAtIndex,
     generateNutritionFile,
     readNutritionFile
