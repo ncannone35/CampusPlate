@@ -55,6 +55,12 @@ function generate_possible_meals(meals_list) {
         let cream_fat = ''
         let cream_carbs = ''
         let contains_cream_cheese = false
+
+        let pizza_calories = 0 
+        let pizza_protein = ''
+        let pizza_fat = ''
+        let pizza_carbs = ''
+        let contains_pizza = false
         if(meals_list[i].info.calories > 110) {
             if(meals_list[i].info.name.includes("Rice") ) {
                 contains_rice = true
@@ -63,20 +69,40 @@ function generate_possible_meals(meals_list) {
                 rice_protein = meals_list[i].info.protein
                 rice_fat = meals_list[i].info.fat 
 
+            }
+            else if(meals_list[i].info.name.includes("Pizza") ) {
+                contains_pizza = true
+                pizza_calories = meals_list[i].info.calories
+                pizza_carbs = meals_list[i].info.carbs 
+                pizza_protein = meals_list[i].info.protein
+                pizza_fat = meals_list[i].info.fat 
+
             }else {
                 high_calorie_meals.push(meals_list[i])
             }
-        if(contains_rice) {
-            let rice = {
-                name: 'Choice of Rice',
-                info: {
-                    calories: rice_cals,
+            if(contains_rice) {
+                let rice = {
+                    name: 'Choice of Rice',
+                    info: {
+                        calories: rice_cals,
                     protein: rice_protein,
                     fat: rice_fat,
                     carbs: rice_carbs
+                    }
+                }
+            high_calorie_meals.push(rice)
+            }
+            if(contains_pizza) {
+                let pizza = {
+                    name: 'Choice of Pizza',
+                    info: {
+                        calories: pizza_calories,
+                    protein: pizza_protein,
+                    fat: pizza_fat,
+                    carbs: pizza_carbs 
                 }
             }
-            high_calorie_meals.push(rice)
+            high_calorie_meals.push(pizza)
         }
         }
         else{
@@ -141,11 +167,13 @@ function format_meals(meals) {
         for(let ingredient of meal) {
             if(!(ingredient.name == 'Choice of Rice' && ingredients.includes('Choice of Rice'))) {
                 if(!(ingredient.name == 'Choice of Cream Cheese' && ingredients.includes('Choice of Cream Cheese'))) {
-                    ingredients.push(ingredient.name)
-                    cals = cals + ingredient.info.calories
-                    protein = addGrams([ingredient.info.protein, protein])
-                    carbs = addGrams([ingredient.info.carbs, carbs])
-                    fat = addGrams([ingredient.info.fat, fat])
+                    if(!(ingredient.name == 'Choice of Pizza' && ingredients.includes('Choice of Pizza'))) {
+                        ingredients.push(ingredient.name)
+                        cals = cals + ingredient.info.calories
+                        protein = addGrams([ingredient.info.protein, protein])
+                        carbs = addGrams([ingredient.info.carbs, carbs])
+                        fat = addGrams([ingredient.info.fat, fat])
+                    }
                 }
             }
         }

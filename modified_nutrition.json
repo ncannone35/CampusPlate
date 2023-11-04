@@ -2238,214 +2238,199 @@
         "meals": [
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg"
             ],
             "info": {
-              "calories": 480,
-              "protein": "29g",
-              "carbs": "30g",
-              "fat": "27g"
+              "calories": 300,
+              "protein": "18g",
+              "carbs": "15g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg",
               "Cantaloupe"
             ],
             "info": {
-              "calories": 505,
-              "protein": "30g",
-              "carbs": "36g",
-              "fat": "27g"
+              "calories": 325,
+              "protein": "19g",
+              "carbs": "21g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg",
               "Cantaloupe",
               "Pineapple"
             ],
             "info": {
-              "calories": 540,
-              "protein": "30g",
-              "carbs": "46g",
-              "fat": "27g"
+              "calories": 360,
+              "protein": "19g",
+              "carbs": "31g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg",
               "Cantaloupe",
               "Pineapple",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 570,
-              "protein": "30g",
-              "carbs": "54g",
-              "fat": "27g"
+              "calories": 390,
+              "protein": "19g",
+              "carbs": "39g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg",
               "Cantaloupe",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 535,
-              "protein": "30g",
-              "carbs": "44g",
-              "fat": "27g"
+              "calories": 355,
+              "protein": "19g",
+              "carbs": "29g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg",
               "Pineapple"
             ],
             "info": {
-              "calories": 515,
-              "protein": "29g",
-              "carbs": "40g",
-              "fat": "27g"
+              "calories": 335,
+              "protein": "18g",
+              "carbs": "25g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg",
               "Pineapple",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 545,
-              "protein": "29g",
-              "carbs": "48g",
-              "fat": "27g"
+              "calories": 365,
+              "protein": "18g",
+              "carbs": "33g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 510,
-              "protein": "29g",
-              "carbs": "38g",
-              "fat": "27g"
+              "calories": 330,
+              "protein": "18g",
+              "carbs": "23g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Cantaloupe"
             ],
             "info": {
-              "calories": 435,
-              "protein": "24g",
-              "carbs": "36g",
-              "fat": "22g"
+              "calories": 255,
+              "protein": "13g",
+              "carbs": "21g",
+              "fat": "13g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Cantaloupe",
               "Pineapple"
             ],
             "info": {
-              "calories": 470,
-              "protein": "24g",
-              "carbs": "46g",
-              "fat": "22g"
+              "calories": 290,
+              "protein": "13g",
+              "carbs": "31g",
+              "fat": "13g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Cantaloupe",
               "Pineapple",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 500,
-              "protein": "24g",
-              "carbs": "54g",
-              "fat": "22g"
+              "calories": 320,
+              "protein": "13g",
+              "carbs": "39g",
+              "fat": "13g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Cantaloupe",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 465,
-              "protein": "24g",
-              "carbs": "44g",
-              "fat": "22g"
+              "calories": 285,
+              "protein": "13g",
+              "carbs": "29g",
+              "fat": "13g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Pineapple"
             ],
             "info": {
-              "calories": 445,
-              "protein": "23g",
-              "carbs": "40g",
-              "fat": "22g"
+              "calories": 265,
+              "protein": "12g",
+              "carbs": "25g",
+              "fat": "13g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Pineapple",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 475,
-              "protein": "23g",
-              "carbs": "48g",
-              "fat": "22g"
+              "calories": 295,
+              "protein": "12g",
+              "carbs": "33g",
+              "fat": "13g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 440,
-              "protein": "23g",
-              "carbs": "38g",
-              "fat": "22g"
+              "calories": 260,
+              "protein": "12g",
+              "carbs": "23g",
+              "fat": "13g"
             }
           }
         ]
@@ -30414,214 +30399,199 @@
         "meals": [
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg"
             ],
             "info": {
-              "calories": 480,
-              "protein": "29g",
-              "carbs": "30g",
-              "fat": "27g"
+              "calories": 300,
+              "protein": "18g",
+              "carbs": "15g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg",
               "Cantaloupe"
             ],
             "info": {
-              "calories": 505,
-              "protein": "30g",
-              "carbs": "36g",
-              "fat": "27g"
+              "calories": 325,
+              "protein": "19g",
+              "carbs": "21g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg",
               "Cantaloupe",
               "Pineapple"
             ],
             "info": {
-              "calories": 540,
-              "protein": "30g",
-              "carbs": "46g",
-              "fat": "27g"
+              "calories": 360,
+              "protein": "19g",
+              "carbs": "31g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg",
               "Cantaloupe",
               "Pineapple",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 570,
-              "protein": "30g",
-              "carbs": "54g",
-              "fat": "27g"
+              "calories": 390,
+              "protein": "19g",
+              "carbs": "39g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg",
               "Cantaloupe",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 535,
-              "protein": "30g",
-              "carbs": "44g",
-              "fat": "27g"
+              "calories": 355,
+              "protein": "19g",
+              "carbs": "29g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg",
               "Pineapple"
             ],
             "info": {
-              "calories": 515,
-              "protein": "29g",
-              "carbs": "40g",
-              "fat": "27g"
+              "calories": 335,
+              "protein": "18g",
+              "carbs": "25g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg",
               "Pineapple",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 545,
-              "protein": "29g",
-              "carbs": "48g",
-              "fat": "27g"
+              "calories": 365,
+              "protein": "18g",
+              "carbs": "33g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Hard Cooked Egg",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 510,
-              "protein": "29g",
-              "carbs": "38g",
-              "fat": "27g"
+              "calories": 330,
+              "protein": "18g",
+              "carbs": "23g",
+              "fat": "18g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Cantaloupe"
             ],
             "info": {
-              "calories": 435,
-              "protein": "24g",
-              "carbs": "36g",
-              "fat": "22g"
+              "calories": 255,
+              "protein": "13g",
+              "carbs": "21g",
+              "fat": "13g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Cantaloupe",
               "Pineapple"
             ],
             "info": {
-              "calories": 470,
-              "protein": "24g",
-              "carbs": "46g",
-              "fat": "22g"
+              "calories": 290,
+              "protein": "13g",
+              "carbs": "31g",
+              "fat": "13g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Cantaloupe",
               "Pineapple",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 500,
-              "protein": "24g",
-              "carbs": "54g",
-              "fat": "22g"
+              "calories": 320,
+              "protein": "13g",
+              "carbs": "39g",
+              "fat": "13g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Cantaloupe",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 465,
-              "protein": "24g",
-              "carbs": "44g",
-              "fat": "22g"
+              "calories": 285,
+              "protein": "13g",
+              "carbs": "29g",
+              "fat": "13g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Pineapple"
             ],
             "info": {
-              "calories": 445,
-              "protein": "23g",
-              "carbs": "40g",
-              "fat": "22g"
+              "calories": 265,
+              "protein": "12g",
+              "carbs": "25g",
+              "fat": "13g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Pineapple",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 475,
-              "protein": "23g",
-              "carbs": "48g",
-              "fat": "22g"
+              "calories": 295,
+              "protein": "12g",
+              "carbs": "33g",
+              "fat": "13g"
             }
           },
           {
             "ingredients": [
-              "Flower City Breakfast Sausage Pizza",
-              "Flower City Breakfast Egg & Cheese Pizza",
+              "Choice of Pizza",
               "Honeydew Melon"
             ],
             "info": {
-              "calories": 440,
-              "protein": "23g",
-              "carbs": "38g",
-              "fat": "22g"
+              "calories": 260,
+              "protein": "12g",
+              "carbs": "23g",
+              "fat": "13g"
             }
           }
         ]
