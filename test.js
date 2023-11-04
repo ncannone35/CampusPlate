@@ -81,13 +81,15 @@ function fitness(h) {
     const diffCarbs = Math.abs(carbs - GOAL_CARBS);
 
     // Sum the differences
-    const totalDifference = (diffCalories) + (diffProtein) + diffFat + diffCarbs;
-
+    let calDiff = (GOAL_CALORIES - Math.abs(GOAL_CALORIES - cals))
+    let c = (calDiff + ((calDiff / 2) * (variety / h.numFoods)))
+    const totalDifference = (GOAL_CALORIES - diffCalories) * (GOAL_PROTEIN - diffProtein) * ((GOAL_FAT - diffFat) / 100) * ((GOAL_CARBS - diffCarbs) / 100) * (variety / h.numFoods)
+    return totalDifference
     // Calculate fitness score, higher is better
     // Adding 1 to prevent division by zero
     const fitness = 1 / (1 + totalDifference);
-    let calDiff = (GOAL_CALORIES - Math.abs(GOAL_CALORIES - cals))
-    return (calDiff + ((calDiff / 2) * (variety / h.numFoods))) * protein // * (1 / Math.abs(carbs - GOAL_CARBS)) * (1 / Math.abs(fat - GOAL_FAT))
+    // let calDiff = (GOAL_CALORIES - Math.abs(GOAL_CALORIES - cals))
+    // return (calDiff + ((calDiff / 2) * (variety / h.numFoods))) * protein // * (1 / Math.abs(carbs - GOAL_CARBS)) * (1 / Math.abs(fat - GOAL_FAT))
 
     //return fitness * (variety / h.numFoods)
 }
@@ -142,7 +144,7 @@ let c = 0
 let p = 0
 pop[0].foods.sort((a, b) => { return (`${a.time}`).localeCompare(b.time) })
 for (let i of pop[0].foods) {
-    console.log(i.time, "|", i.name, "|", i.place, "|", "Calories:", i.calories, "Protein:", i.protein)
+    console.log(i.time, "|", i.name, "|", i.place, "|", "Calories:", i.calories, "Protein:", i.protein, "Carbs", i.carbs, "Fat", i.fat)
     c += i.calories
     p += i.protein
 }
