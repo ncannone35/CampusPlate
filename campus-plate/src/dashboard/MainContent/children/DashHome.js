@@ -2,6 +2,8 @@ import MealPlan from "@/dashboard/components/mealPlan";
 import { useState } from "react";
 import ViewMealTab from "@/dashboard/components/viewMealTab";
 import axios from "axios";
+import Loading from "@/components/navbar/loading";
+import classNames from "classnames";
 
 const DashHome = ({ preferences }) => {
   const [date, setDate] = useState(new Date());
@@ -87,8 +89,11 @@ const DashHome = ({ preferences }) => {
 
   const [meals, setMeals] = useState(null);
 
+  const [isGenerating, setIsGenerating] = useState(false);
+
   const handleGenerate = async (e) => {
     e.preventDefault();
+    setIsGenerating(true);
     try {
       const request = {};
       const { data } = await axios.get("/api/generatemeal", {
@@ -100,6 +105,7 @@ const DashHome = ({ preferences }) => {
     } catch (error) {
       console.log("something is wwrong");
     }
+    setIsGenerating(false);
   };
 
   return (
@@ -107,7 +113,7 @@ const DashHome = ({ preferences }) => {
       <div className="flex flex-col">
         <div
           id="headerContainer"
-          className="flex flex-col border- py-[55px] space-y-[10px] border-b-[0.11rem] border-heavy"
+          className="flex flex-col border- pt-[55px] pb-[40px] space-y-[10px] border-b-[0.11rem] border-heavy"
         >
           {/* <h1 className="text-2xl font-semibold text-black">Home</h1> */}
           <h1 className="text-3xl font-semibold text-black">
@@ -118,36 +124,74 @@ const DashHome = ({ preferences }) => {
             Today is {date.toDateString()}
           </h2>
 
-          <section className="py-[30px]">
-            {meals !== null && (
+          <div className="h-[176px] border- flex items-center">
+            <section
+              className={classNames(
+                "transition duration-1000	",
+                meals !== null ? "opacity-1" : "opacity-0"
+              )}
+            >
               <ViewMealTab
-                meals={meals.foods}
+                meals={meals?.foods}
                 mealSelectd={mealSelected}
                 setMealSelected={setMealSelected}
               />
-            )}
-          </section>
+              {/* {meals !== null && (
+                <ViewMealTab
+                  meals={meals.foods}
+                  mealSelectd={mealSelected}
+                  setMealSelected={setMealSelected}
+                />
+              )} */}
+            </section>
+          </div>
 
           <div
             id="instruction"
-            className="flex flex-row justify-between border- items-center w-[50%]"
+            className="flex flex-row justify-between border- items-center max-w-[850px] h-[60px]"
           >
             <h1 className="text-xl border-">
-              Your suggested meal plan is below
+              {meals === null ? (
+                <> Go generate your meal plans for the day!</>
+              ) : (
+                <> Your suggested meal plan is below</>
+              )}
             </h1>
 
-            <button
-              onClick={handleGenerate}
-              className="tracking-widest text-base font-semibold border- px-2 py-[3px] rounded-3xl bg- text-black hover:text-white bg-white hover:bg-[#fbbf24] transition border-[3px] border-bgColor hover:scale-110"
+            <div
+              id="genAndLoad"
+              className="flex flex-row border- space-x-[10px] items-center justify-center "
             >
-              {" "}
-              Generate{" "}
-            </button>
+              <div
+                className={classNames(
+                  "transition duration-700	",
+                  isGenerating ? "opacity-1" : "opacity-0"
+                )}
+              >
+                <Loading height={60} width={60} />{" "}
+              </div>
+              {/* {isGenerating && <Loading height={60} width={60} />} */}
+              <button
+                onClick={handleGenerate}
+                className="tracking-widest text-lg font-semibold border- h-[40px] px-2 rounded-3xl bg- text-black hover:text-white bg-white hover:bg-[#fbbf24] transition border-[3px] border-bgColor hover:scale-110"
+              >
+                {" "}
+                Generate{" "}
+              </button>
+            </div>
           </div>
         </div>
 
         <div id="mealPlanSection" className="border- mt-[20px]">
-          {meals !== null && <MealPlan meal={meals?.foods?.[mealSelected]} />}
+          <div
+            className={classNames(
+              "transition duration-1000	",
+              meals !== null ? "opacity-1" : "opacity-0"
+            )}
+          >
+            <MealPlan meal={meals?.foods?.[mealSelected]} />
+          </div>
+          {/* {meals !== null && <MealPlan meal={meals?.foods?.[mealSelected]} />} */}
         </div>
       </div>
     </>

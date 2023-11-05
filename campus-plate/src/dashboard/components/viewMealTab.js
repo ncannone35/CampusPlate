@@ -3,7 +3,7 @@ import classNames from "classnames";
 const ViewMealTab = ({ meals, mealSelectd, setMealSelected }) => {
   return (
     <div className="flex flex-row space-x-[50px]">
-      {meals.map((meal, index) => (
+      {meals?.map((meal, index) => (
         <div key={index} className="">
           {index === 0 && (
             // Render something for index 1
