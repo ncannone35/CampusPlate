@@ -125,7 +125,7 @@ async function handler(req, res) {
 
     var recipes = await fetch('https://storage.googleapis.com/bucket-campusdining/nutrition.json')
     recipes = await recipes.json()
-    var { POP_SIZE = 1000, MAX_ITEMS = 50, GOAL_CALORIES = 2500, GOAL_CARBS = 200, GOAL_FAT = 50, MIN_CALORIES = 50, NUM_GEN = 250, GOAL_PROTEIN = 150, MUTATION_CHANCE = 0.0025, MEAL_TIME = '' } = req.query
+    var { POP_SIZE = 1000, MAX_ITEMS = 50, GOAL_CALORIES = 2500, GOAL_CARBS = 200, GOAL_FAT = 50, MIN_CALORIES = 50, NUM_GEN = 300, GOAL_PROTEIN = 150, MUTATION_CHANCE = 0.0025, MEAL_TIME = '' } = req.query
     let possibles = []
     let population = []
     // let pp = req.nextUrl.searchParams.get('protein') || 150
@@ -170,7 +170,7 @@ async function handler(req, res) {
         let p = 0
         let ca = 0
         let f = 0
-        pop[0].foods.sort((a, b) => { return (`${a.time}`).localeCompare(b.time) })
+        // pop[0].foods.sort((a, b) => { return (`${a.time}`).localeCompare(b.time) })
         for (let i of pop[0].foods) {
             //console.log(i.time, "|", i.ingredients, "|", i.place, "|", "Calories:", i.calories, "Protein:", i.protein, "Carbs", i.carbs, "Fat", i.fat)
             c += i.calories
