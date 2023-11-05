@@ -160,7 +160,7 @@ let ca = 0
 let f = 0
 pop[0].foods.sort((a, b) => { return (`${a.time}`).localeCompare(b.time) })
 for (let i of pop[0].foods) {
-    console.log(i.time, "|", i.ingredients, "|", i.place, "|", "Calories:", i.calories, "Protein:", i.protein, "Carbs", i.carbs, "Fat", i.fat)
+    console.log(i.time, "|", i.name, "|", i.place, "|", "Calories:", i.calories, "Protein:", i.protein, "Carbs", i.carbs, "Fat", i.fat)
     c += i.calories
     p += i.protein
     ca += i.carbs
@@ -181,6 +181,6 @@ console.log("Carbs:", ca)
 console.log("Fat:", f)
 console.log("Mutations:", GA.mCount())
 
-console.log(JSON.stringify(pop[0], null, 2))
+//console.log(JSON.stringify(pop[0], null, 2))
 
 
