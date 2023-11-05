@@ -28,10 +28,10 @@ const SideBar = ({
         isSidebarOpen ? "translate-x-0" : "-translate-x-full"
       } sm:translate-x-0`}
     >
-      <div className="h-full py-[50px] overflow-y-auto bg-bgColor border-r-[0.11rem] border-heavy">
+      <div className="h-full overflow-y-auto bg-bgColor border-r-[0.11rem] border-heavy">
         <div
           href="/"
-          className="flex flex-col items-center mb-[0px] border- justify-center space-y-[20px] "
+          className="flex flex-col items-center mb-[0px]  py-[50px] border- justify-center space-y-[20px] "
         >
           {/* <span className="mt-[15px] ml-[2px] self-center text-lg font-bold whitespace-nowrap dark:text-white">
             ReviCID
@@ -44,7 +44,7 @@ const SideBar = ({
 
           <h1 className="text-xl border- font-medium"> Hello, {user.name}</h1>
         </div>
-        <ul className="space-y-4 font-normal mt-[100px] border- px-2">
+        <ul className="space-y-4 font-normal mt-[] border- px-2">
           <li>
             <a
               onClick={() => handleLinkClick(<DashHome />)}
@@ -164,7 +164,7 @@ const SideBar = ({
 
           <li>
             <a
-              onClick={handleLogout} 
+              onClick={handleLogout}
               className="flex items-center p-2 cursor-pointer rounded-lg dark:text-white hover:text-support transition-colors hover:bg-gray-50"
             >
               <svg
@@ -186,7 +186,6 @@ const SideBar = ({
               <span className="ml-3 text-lg mt-[3px]">Logout</span>
             </a>
           </li>
-
         </ul>
       </div>
     </aside>

@@ -1,17 +1,22 @@
 import Image from "next/image";
 import classNames from "classnames";
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const MealPlan = ({ meal, random }) => {
-  const [breakfastImage, setBreakfastImage] = useState('');
-  const [lunchImage, setLunchImage] = useState('');
-  const [dinnerImage, setDinnerImage] = useState('');
+  const [breakfastImage, setBreakfastImage] = useState("");
+  const [lunchImage, setLunchImage] = useState("");
+  const [dinnerImage, setDinnerImage] = useState("");
 
   useEffect(() => {
     const images = {
-      breakfast: ['/breakfast.jpeg', '/breakfast2.jpg', '/breakfast3.jpg', '/breakfast4.jpg'],
-      lunch: ['/lunch.jpeg', '/lunch2.jpg', '/lunch3.jpg', '/lunch4.jpg'],
-      dinner: ['/dinner1.jpeg', '/dinner2.jpg', '/dinner.webp', '/dinner4.jpg'],
+      breakfast: [
+        "/breakfast.jpeg",
+        "/breakfast2.jpg",
+        "/breakfast3.jpg",
+        "/breakfast4.jpg",
+      ],
+      lunch: ["/lunch.jpeg", "/lunch2.jpg", "/lunch3.jpg", "/lunch4.jpg"],
+      dinner: ["/dinner1.jpeg", "/dinner2.jpg", "/dinner.webp", "/dinner4.jpg"],
     };
 
     // Randomize images for each meal
@@ -69,7 +74,19 @@ const MealPlan = ({ meal, random }) => {
                 index % 2 == 0 ? "bg-bgColor" : "bg-standout"
               )}
             >
-              <a className="font-semibold">{item}</a> <a> I had this </a>
+              <a className="font-semibold">{item}</a>{" "}
+              <a className="hover:scale-125 transition hover:text-standout">
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="current"
+                >
+                  <path d="M16 2H8C4.691 2 2 4.691 2 8v13a1 1 0 0 0 1 1h13c3.309 0 6-2.691 6-6V8c0-3.309-2.691-6-6-6zm1 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"></path>
+                </svg>
+              </a>
             </li>
           ))}
         </ul>
