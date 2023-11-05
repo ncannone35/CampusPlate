@@ -1,7 +1,31 @@
 import Image from "next/image";
 import classNames from "classnames";
+import { useState, useEffect } from 'react';
 
-const MealPlan = ({ meal }) => {
+const MealPlan = ({ meal, random }) => {
+  const [breakfastImage, setBreakfastImage] = useState('');
+  const [lunchImage, setLunchImage] = useState('');
+  const [dinnerImage, setDinnerImage] = useState('');
+
+  useEffect(() => {
+    const images = {
+      breakfast: ['/breakfast.jpeg', '/breakfast2.jpg', '/breakfast3.jpg', '/breakfast4.jpg'],
+      lunch: ['/lunch.jpeg', '/lunch2.jpg', '/lunch3.jpg', '/lunch4.jpg'],
+      dinner: ['/dinner1.jpeg', '/dinner2.jpg', '/dinner.webp', '/dinner4.jpg'],
+    };
+
+    // Randomize images for each meal
+    setBreakfastImage(images.breakfast[random]);
+    setLunchImage(images.lunch[random]);
+    setDinnerImage(images.dinner[random]);
+  }, [random]);
+
+  const mealImage = meal?.time.includes("Breakfast")
+    ? breakfastImage
+    : meal?.time.includes("Brunch")
+    ? lunchImage
+    : dinnerImage;
+
   return (
     <div className="flex border- max-w-[850px]">
       <div
@@ -9,7 +33,7 @@ const MealPlan = ({ meal }) => {
         className="flex flex-col relative border- w-[400px] h-[420px]"
       >
         <Image
-          src="/breakfast_long.avif"
+          src={mealImage}
           width={300}
           height={500}
           className="rounded-2xl w-full object-cover h-full"
@@ -38,7 +62,7 @@ const MealPlan = ({ meal }) => {
 
       <div id="ingredientsWrapper" className="border- w-full pl-[20px]">
         <ul id="ingredients" className="flex flex-col border- space-y-[10px]">
-          {meal?.ingredients.map((item, index) => (
+          {(meal?.ingredients || []).map((item, index) => (
             <li
               className={classNames(
                 "border- px-2 py-4 flex justify-between rounded-xl",
