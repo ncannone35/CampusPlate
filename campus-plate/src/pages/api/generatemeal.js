@@ -2,7 +2,7 @@
 const GA = require('../../lib/ga.js')
 
 export default async function handler(req, res) {
-    var recipes = await fetch('https://storage.googleapis.com/bucket-campusdining/nutrition.json')
+    var recipes = await fetch('https://storage.googleapis.com/bucket-campusdining/nutrition.json',{ cache: 'no-store' })
     recipes = await recipes.json()
 
     let possibles = []
