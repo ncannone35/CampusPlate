@@ -100,10 +100,13 @@ const DashHome = ({ preferences }) => {
         params: { GOAL_PROTEIN: 150, GOAL_CALORIES: 2000 },
       });
       if (data) {
-        setMeals(data);
+        const randomNumber = Math.floor(Math.random() * 4);
+        // console.log(randomNumber)
+        setMeals({ ...data, randomNumber });
+        // setMeals(data);
       }
     } catch (error) {
-      console.log("something is wwrong");
+      console.log("something is wrong");
     }
     setIsGenerating(false);
   };
@@ -189,7 +192,8 @@ const DashHome = ({ preferences }) => {
               meals !== null ? "opacity-1" : "opacity-0"
             )}
           >
-            <MealPlan meal={meals?.foods?.[mealSelected]} />
+            {/* <MealPlan meal={meals?.foods?.[mealSelected]} /> */}
+            <MealPlan meal={meals?.foods?.[mealSelected]} random={meals?.randomNumber} />
           </div>
           {/* {meals !== null && <MealPlan meal={meals?.foods?.[mealSelected]} />} */}
         </div>
