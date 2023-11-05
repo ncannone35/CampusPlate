@@ -4,8 +4,9 @@ import ViewMealTab from "@/dashboard/components/viewMealTab";
 import axios from "axios";
 import Loading from "@/components/navbar/loading";
 import classNames from "classnames";
+import PreferenceBarModal from "@/dashboard/PreferenceBar/prefBar";
 
-const DashHome = ({ preferences }) => {
+const DashHome = ({ preferences, setIsPrefbarOpen }) => {
   const [date, setDate] = useState(new Date());
 
   const mealsTesting = {
@@ -91,13 +92,29 @@ const DashHome = ({ preferences }) => {
 
   const [isGenerating, setIsGenerating] = useState(false);
 
+  const [showPreference, setShowPreference] = useState(false);
+
+  const handleFirstGenClick = () => {
+    setShowPreference(true);
+  };
+
   const handleGenerate = async (e) => {
     e.preventDefault();
+    // setIsPrefbarOpen(false);
+
+    // const proteinGoal = preferences?.calories;
+    // const caloriesGoal = preferences?.protein;
+    // console.log(proteinGoal);
+    // console.log(caloriesGoal);
     setIsGenerating(true);
     try {
       const request = {};
+      const proteinGoal = preferences.protein;
+      const caloriesGoal = preferences.calories;
+      console.log(proteinGoal);
+      console.log(caloriesGoal);
       const { data } = await axios.get("/api/generatemeal", {
-        params: { GOAL_PROTEIN: 150, GOAL_CALORIES: 2000 },
+        params: { GOAL_PROTEIN: proteinGoal, GOAL_CALORIES: caloriesGoal },
       });
       if (data) {
         const randomNumber = Math.floor(Math.random() * 4);
@@ -113,7 +130,7 @@ const DashHome = ({ preferences }) => {
 
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col relative">
         <div
           id="headerContainer"
           className="flex flex-col border- pt-[55px] pb-[40px] space-y-[10px] border-b-[0.11rem] border-heavy"
@@ -178,7 +195,6 @@ const DashHome = ({ preferences }) => {
                 onClick={handleGenerate}
                 className="tracking-widest text-lg font-semibold border- h-[40px] px-2 rounded-3xl bg- text-black hover:text-white bg-white hover:bg-[#fbbf24] transition border-[3px] border-bgColor hover:scale-110"
               >
-                {" "}
                 Generate{" "}
               </button>
             </div>
@@ -193,7 +209,10 @@ const DashHome = ({ preferences }) => {
             )}
           >
             {/* <MealPlan meal={meals?.foods?.[mealSelected]} /> */}
-            <MealPlan meal={meals?.foods?.[mealSelected]} random={meals?.randomNumber} />
+            <MealPlan
+              meal={meals?.foods?.[mealSelected]}
+              random={meals?.randomNumber}
+            />
           </div>
           {/* {meals !== null && <MealPlan meal={meals?.foods?.[mealSelected]} />} */}
         </div>

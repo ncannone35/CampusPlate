@@ -5,12 +5,22 @@ import MainContent from "@/dashboard/MainContent/maincontent";
 import PreferenceBarModal from "@/dashboard/PreferenceBar/prefBar";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0/client";
 import Head from "next/head";
+import classNames from "classnames";
 
 // this will throw in the sideBar and render main content according
 const DashBoardHome = () => {
   const [selectedComponent, setSelectedComponent] = useState(<DashHome />);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isPrefbarOpen, setIsPrefbarOpen] = useState(false);
+
+  const [preferences, setPreferences] = useState({
+    // vegetarian: false,
+    // vegan: false,
+    // glutenFree: false,
+    // ... other preferences
+    calories: 2500,
+    protein: 150,
+  });
 
   const handleToggle = () => {
     setIsSidebarOpen((prevState) => !prevState);
@@ -59,10 +69,19 @@ const DashBoardHome = () => {
             handleLinkClick={handleLinkClick}
             selectedComponent={selectedComponent}
           />
-          <MainContent children={selectedComponent} />
+          <MainContent
+            children={selectedComponent}
+            setIsPrefbarOpen={setIsPrefbarOpen}
+            preferences={preferences}
+          />
         </div>
+
         {isPrefbarOpen && (
-          <PreferenceBarModal handleCloseBar={setIsPrefbarOpen} />
+          <PreferenceBarModal
+            handleCloseBar={setIsPrefbarOpen}
+            preferences={preferences}
+            setPreferences={setPreferences}
+          />
         )}
       </div>
     </>
