@@ -84,10 +84,11 @@ function generate_possible_meals(meals_list) {
                 let rice = {
                     name: 'Choice of Rice',
                     info: {
-                        calories: rice_cals,
+                    calories: rice_cals,
                     protein: rice_protein,
                     fat: rice_fat,
-                    carbs: rice_carbs
+                    carbs: rice_carbs,
+                    dietary_restrictions: meals_list[i].info.dietary_restrictions 
                     }
                 }
             high_calorie_meals.push(rice)
@@ -96,10 +97,11 @@ function generate_possible_meals(meals_list) {
                 let pizza = {
                     name: 'Choice of Pizza',
                     info: {
-                        calories: pizza_calories,
+                    calories: pizza_calories,
                     protein: pizza_protein,
                     fat: pizza_fat,
-                    carbs: pizza_carbs 
+                    carbs: pizza_carbs, 
+                    dietary_restrictions: meals_list[i].info.dietary_restrictions 
                 }
             }
             high_calorie_meals.push(pizza)
@@ -123,7 +125,8 @@ function generate_possible_meals(meals_list) {
                         calories: cream_calories,
                         protein: cream_protein,
                         fat: cream_fat,
-                        carbs: cream_carbs 
+                        carbs: cream_carbs,
+                        dietary_restrictions: meals_list[i].info.dietary_restrictions 
                     }
                 }
             low_calorie_meals.push(cream)
@@ -164,6 +167,7 @@ function format_meals(meals) {
         let protein = '0g'
         let carbs = '0g'
         let fat = '0g'
+        let dietary_restrictions = ['vegan', 'vegitarian', 'gluten']
         for(let ingredient of meal) {
             if(!(ingredient.name == 'Choice of Rice' && ingredients.includes('Choice of Rice'))) {
                 if(!(ingredient.name == 'Choice of Cream Cheese' && ingredients.includes('Choice of Cream Cheese'))) {
@@ -173,6 +177,11 @@ function format_meals(meals) {
                         protein = addGrams([ingredient.info.protein, protein])
                         carbs = addGrams([ingredient.info.carbs, carbs])
                         fat = addGrams([ingredient.info.fat, fat])
+                        for(let restrictions of dietary_restrictions) {
+                            if(!ingredient.info.dietary_restrictions.includes(restrictions)) {
+                                dietary_restrictions.splice(dietary_restrictions.indexOf(restrictions))
+                            }
+                        }
                     }
                 }
             }
@@ -184,7 +193,8 @@ function format_meals(meals) {
                 calories: cals,
                 protein: protein,
                 carbs: carbs,
-                fat: fat
+                fat: fat,
+                dietary_restrictions: dietary_restrictions
             }
         }
         formatted_meals.push(meal_json)
