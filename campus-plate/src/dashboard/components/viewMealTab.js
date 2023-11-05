@@ -35,7 +35,7 @@ const ViewMealTab = ({ meals, mealSelectd, setMealSelected }) => {
               </a>
               <h1 className="text-lg capitalize tracking-wide">
                 {" "}
-                {meal.time.split(" ")[0]}
+                {meal?.time.split(" ")[0]}
               </h1>
             </a>
           )}
@@ -72,7 +72,7 @@ const ViewMealTab = ({ meals, mealSelectd, setMealSelected }) => {
               </a>
               <h1 className="text-lg capitalize tracking-wide">
                 {" "}
-                {meal.time.split(" ")[0]}
+                {meal?.time.split(" ")[0]}
               </h1>{" "}
             </a>
           )}
@@ -109,7 +109,7 @@ const ViewMealTab = ({ meals, mealSelectd, setMealSelected }) => {
               </a>
               <h1 className="text-lg capitalize tracking-wide">
                 {" "}
-                {meal.time.split(" ")[0]}
+                {meal?.time.split(" ")[0]}
               </h1>{" "}
             </a>
           )}
@@ -145,7 +145,7 @@ const ViewMealTab = ({ meals, mealSelectd, setMealSelected }) => {
               </a>
               <h1 className="text-lg capitalize tracking-wide">
                 {" "}
-                {meal.time.split(" ")[0]}
+                {meal?.time.split(" ")[0]}
               </h1>{" "}
             </a>
           )}
