@@ -124,7 +124,7 @@ const DashHome = ({ preferences }) => {
             Today is {date.toDateString()}
           </h2>
 
-          <div className="h-[176px] border- flex items-center">
+          <div className="h-[176px] border- flex items-center w-full border-">
             <section
               className={classNames(
                 "transition duration-1000	",
