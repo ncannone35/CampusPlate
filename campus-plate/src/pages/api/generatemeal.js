@@ -1,8 +1,30 @@
 'use strict'
 const GA = require('../../lib/ga.js')
 
-export default async function handler(req, res) {
+async function handler(req, res) {
     function fitness(h) {
+        let g_calories = GOAL_CALORIES 
+        let g_protein = GOAL_PROTEIN
+        let g_fat = GOAL_FAT
+        let g_carbs = GOAL_CARBS
+        if(MEAL_TIME == 'Breakfast (9am-10:30am)'){
+            g_calories = GOAL_CALORIES * .3
+            g_protein = GOAL_PROTEIN* .3
+            g_fat = GOAL_FAT* .3
+            g_carbs = GOAL_CARBS* .3
+        }
+        else if(MEAL_TIME == 'Brunch (10:30am-2:30am)'){
+            g_calories = GOAL_CALORIES * .3
+            g_protein = GOAL_PROTEIN* .3
+            g_fat = GOAL_FAT* .3
+            g_carbs = GOAL_CARBS* .3
+        }
+        else if(MEAL_TIME == 'Dinner (5pm-8pm)'){
+            g_calories = GOAL_CALORIES * .3
+            g_protein = GOAL_PROTEIN* .3
+            g_fat = GOAL_FAT* .3
+            g_carbs = GOAL_CARBS* .3
+        }
         let variety = h.numFoods
         for (let i = 0; i < h.foods.length; i++) {
             for (let j = 0; j < h.foods.length; j++) {
@@ -22,14 +44,14 @@ export default async function handler(req, res) {
             carbs += f.carbs
             fat += f.fat
         }
-        if (protein > GOAL_PROTEIN) protein = GOAL_PROTEIN
+        if (protein > g_protein) protein = g_protein 
 
-        const diffCalories = Math.abs(cals - GOAL_CALORIES);
-        const diffProtein = Math.abs(protein - GOAL_PROTEIN);
-        const diffFat = Math.abs(fat - GOAL_FAT);
-        const diffCarbs = Math.abs(carbs - GOAL_CARBS);
+        const diffCalories = Math.abs(cals - g_calories);
+        const diffProtein = Math.abs(protein - g_protein);
+        const diffFat = Math.abs(fat - g_fat);
+        const diffCarbs = Math.abs(carbs - g_carbs);
         //process.exit(1)
-        const totalDifference = (GOAL_CALORIES - diffCalories) * (GOAL_PROTEIN - diffProtein) * ((GOAL_FAT - diffFat) / 100) * ((GOAL_CARBS - diffCarbs) / 100)
+        const totalDifference = (g_calories - diffCalories) * (g_protein- diffProtein) * ((g_fat- diffFat) / 100) * ((g_carbs- diffCarbs) / 100)
         //return totalDifference
         const fit = (1 / diffCalories) + (1 / diffProtein) + (1 / diffFat) + (1 / diffCarbs)
         //return fit
@@ -42,7 +64,7 @@ export default async function handler(req, res) {
         // // Calculate fitness score, higher is better
         // // Adding 1 to prevent division by zero
         // const fitness = 1 / (1 + totalDifference);
-        let calDiff = (GOAL_CALORIES - Math.abs(GOAL_CALORIES - cals))
+        let calDiff = (g_calories- Math.abs(g_calories- cals))
         let f = ((calDiff + ((calDiff / 2) * (variety / h.numFoods))) * protein) + (100 / diffCarbs) + (100 / diffFat)
         return f
 
@@ -88,7 +110,7 @@ export default async function handler(req, res) {
         return a;
     }
     function randomDay() {
-        let numFoods = 5
+        let numFoods = 2
         let day = {
             numFoods,
             foods: []
@@ -103,19 +125,21 @@ export default async function handler(req, res) {
 
     var recipes = await fetch('https://storage.googleapis.com/bucket-campusdining/nutrition.json')
     recipes = await recipes.json()
+    var { POP_SIZE = 1000, MAX_ITEMS = 50, GOAL_CALORIES = 2500, GOAL_CARBS = 200, GOAL_FAT = 50, MIN_CALORIES = 50, NUM_GEN = 250, GOAL_PROTEIN = 150, MUTATION_CHANCE = 0.0025, MEAL_TIME = '' } = req.query
     let possibles = []
     let population = []
     // let pp = req.nextUrl.searchParams.get('protein') || 150
     // let cc = req.nextUrl.searchParams.get('calories') || 2500
 
-    var { POP_SIZE = 1000, MAX_ITEMS = 50, GOAL_CALORIES = 2500, GOAL_CARBS = 200, GOAL_FAT = 50, MIN_CALORIES = 50, NUM_GEN = 250, GOAL_PROTEIN = 150, MUTATION_CHANCE = 0.0025 } = req.query
-
     GOAL_CALORIES = process.argv[2] || GOAL_CALORIES
-    GOAL_CARBS = (GOAL_CALORIES * .5) / 4
-    GOAL_FAT = (GOAL_CALORIES) * .275 / 9
-
+    // GOAL_CARBS = (GOAL_CALORIES * .5) / 4
+    // GOAL_FAT = (GOAL_CALORIES) * .275 / 9
     // sanitize recipies for GA
     for (let time of recipes) {
+        possibles = []
+        MEAL_TIME = time.label
+        console.log(time.label)
+        if(time.label == 'Continental (8am-9am)') continue
         for (let place of time.places) {
             for (let meal of place.meals) {
                 if (meal.info.calories < MIN_CALORIES) continue;
@@ -132,29 +156,32 @@ export default async function handler(req, res) {
 
             }
         }
-    }
-    for (let i = 0; i < POP_SIZE; i++) {
-        population.push(randomDay())
-    }
-    GA.init({ population, fitness, selection, crossover, random: randomDay, mutation, mchance: MUTATION_CHANCE })
+        for (let i = 0; i < POP_SIZE; i++) {
+            population.push(randomDay())
+        }
+        GA.init({ population, fitness, selection, crossover, random: randomDay, mutation, mchance: MUTATION_CHANCE })
 
-    for (let i = 0; i < NUM_GEN; i++) {
-        GA.evolve()
-    }
+        for (let i = 0; i < NUM_GEN; i++) {
+            GA.evolve()
+        }
 
-    let pop = GA.getPop()
-    let c = 0
-    let p = 0
-    let ca = 0
-    let f = 0
-    pop[0].foods.sort((a, b) => { return (`${a.time}`).localeCompare(b.time) })
-    for (let i of pop[0].foods) {
-        //console.log(i.time, "|", i.ingredients, "|", i.place, "|", "Calories:", i.calories, "Protein:", i.protein, "Carbs", i.carbs, "Fat", i.fat)
-        c += i.calories
-        p += i.protein
-        ca += i.carbs
-        f += i.fat
+        let pop = GA.getPop()
+        let c = 0
+        let p = 0
+        let ca = 0
+        let f = 0
+        pop[0].foods.sort((a, b) => { return (`${a.time}`).localeCompare(b.time) })
+        for (let i of pop[0].foods) {
+            //console.log(i.time, "|", i.ingredients, "|", i.place, "|", "Calories:", i.calories, "Protein:", i.protein, "Carbs", i.carbs, "Fat", i.fat)
+            c += i.calories
+            p += i.protein
+            ca += i.carbs
+            f += i.fat
+        }
+        // res.status(200).json(pop[0])
+        console.log(pop[0])
     }
-    res.status(200).json(pop[0])
 }
 
+
+handler({query:{}})
