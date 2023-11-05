@@ -1,7 +1,7 @@
 'use strict'
 const GA = require('../../lib/ga.js')
 
-async function handler(req, res) {
+export default async function handler(req, res) {
     function fitness(h) {
         let g_calories = GOAL_CALORIES 
         let g_protein = GOAL_PROTEIN
@@ -125,9 +125,10 @@ async function handler(req, res) {
 
     var recipes = await fetch('https://storage.googleapis.com/bucket-campusdining/nutrition.json')
     recipes = await recipes.json()
-    var { POP_SIZE = 1000, MAX_ITEMS = 50, GOAL_CALORIES = 2500, GOAL_CARBS = 200, GOAL_FAT = 50, MIN_CALORIES = 50, NUM_GEN = 300, GOAL_PROTEIN = 150, MUTATION_CHANCE = 0.0025, MEAL_TIME = '' } = req.query
+    var { POP_SIZE = 1000, MAX_ITEMS = 50, GOAL_CALORIES = 2500, GOAL_CARBS = 200, GOAL_FAT = 50, MIN_CALORIES = 50, NUM_GEN = 150, GOAL_PROTEIN = 150, MUTATION_CHANCE = 0.0025, MEAL_TIME = '' } = req.query
     let possibles = []
     let population = []
+    let final_plan = []
     // let pp = req.nextUrl.searchParams.get('protein') || 150
     // let cc = req.nextUrl.searchParams.get('calories') || 2500
 
@@ -140,6 +141,8 @@ async function handler(req, res) {
         MEAL_TIME = time.label
         console.log(time.label)
         if(time.label == 'Continental (8am-9am)') continue
+        if(time.label == 'Late Lunch (2:30pm-3:30pm)') continue
+        if(time.label == 'Late Dinner (5pm-8pm)') continue
         for (let place of time.places) {
             for (let meal of place.meals) {
                 if (meal.info.calories < MIN_CALORIES) continue;
@@ -170,7 +173,7 @@ async function handler(req, res) {
         let p = 0
         let ca = 0
         let f = 0
-        // pop[0].foods.sort((a, b) => { return (`${a.time}`).localeCompare(b.time) })
+        pop[0].foods.sort((a, b) => { return (`${a.time}`).localeCompare(b.time) })
         for (let i of pop[0].foods) {
             //console.log(i.time, "|", i.ingredients, "|", i.place, "|", "Calories:", i.calories, "Protein:", i.protein, "Carbs", i.carbs, "Fat", i.fat)
             c += i.calories
@@ -178,10 +181,13 @@ async function handler(req, res) {
             ca += i.carbs
             f += i.fat
         }
-        // res.status(200).json(pop[0])
+        final_plan.push(pop[0])
         console.log(pop[0])
+        // console.log(c, p, ca, f)
     }
+    // console.log(final_plan)
+    res.status(200).json(pop[0])
 }
 
 
-handler({query:{}})
+// handler({query:{}})
