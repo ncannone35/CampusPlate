@@ -109,7 +109,8 @@ export default async function handler(req, res) {
     // let cc = req.nextUrl.searchParams.get('calories') || 2500
 
     var { POP_SIZE = 1000, MAX_ITEMS = 50, GOAL_CALORIES = 2500, GOAL_CARBS = 200, GOAL_FAT = 50, MIN_CALORIES = 50, NUM_GEN = 250, GOAL_PROTEIN = 150, MUTATION_CHANCE = 0.0025 } = req.query
-
+    console.log(req.query)
+    console.log(GOAL_CALORIES)
     GOAL_CALORIES = process.argv[2] || GOAL_CALORIES
     GOAL_CARBS = (GOAL_CALORIES * .5) / 4
     GOAL_FAT = (GOAL_CALORIES) * .275 / 9

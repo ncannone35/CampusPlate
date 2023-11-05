@@ -3,39 +3,42 @@ import classNames from "classnames";
 
 const MealPlan = ({ meal }) => {
   return (
-    <div className="flex border-">
-      <div id="breakfast" className="flex flex-col relative border-">
+    <div className="flex border- max-w-[850px]">
+      <div
+        id="breakfast"
+        className="flex flex-col relative border- w-[400px] h-[420px]"
+      >
         <Image
           src="/breakfast_long.avif"
           width={300}
-          height={400}
-          className="h-full rounded-2xl w-[300px]"
+          height={500}
+          className="rounded-2xl w-full object-cover h-full"
         />
         <div
           id="modal"
-          className="w-full h-full absolute bg-black opacity-50 z-0 rounded-2xl"
+          className="w-full h-full absolute border- bg-black opacity-50 z-0 rounded-2xl"
         >
           {" "}
         </div>
-        <div className="w-[300px] h-full z-30 absolute flex flex-col  items-center justify-center space-y-[15px] ">
-          <h1 className="font-semibold text-3xl text-white w-[150px] tracking-wide capitalize">
-            {meal.time.split(" ")[0]}
-          </h1>
+        <div className="w-full h-full z-30 absolute flex flex-col border- items-center justify-center">
           <div
             id="nutrition"
-            className="text-xl text-white flex flex-col space-y-[px] border-[] w-[150px]"
+            className="text-xl text-white flex flex-col space-y-[px] border- max-w-[170px] w-full"
           >
-            <h1> Calories: {meal.calories} </h1>
-            <h1> Protein: {meal.protein}g </h1>
-            <h1> Carbs: {meal.carbs}g </h1>
-            <h1> Fat: {meal.fat}g </h1>
+            <h1 className="font-semibold text-3xl mb-[10px] border- text-white  tracking-wide capitalize">
+              {meal?.time.split(" ")[0]}
+            </h1>
+            <h1> Calories: {meal?.calories} </h1>
+            <h1> Protein: {meal?.protein}g </h1>
+            <h1> Carbs: {meal?.carbs}g </h1>
+            <h1> Fat: {meal?.fat}g </h1>
           </div>
         </div>
       </div>
 
-      <div id="ingredientsWrapper" className="border- w-2/3 px-[20px]">
+      <div id="ingredientsWrapper" className="border- w-full pl-[20px]">
         <ul id="ingredients" className="flex flex-col border- space-y-[10px]">
-          {meal.ingredients.map((item, index) => (
+          {meal?.ingredients.map((item, index) => (
             <li
               className={classNames(
                 "border- px-2 py-4 flex justify-between rounded-xl",
