@@ -97,7 +97,7 @@ const DashHome = ({ preferences }) => {
     try {
       const request = {};
       const { data } = await axios.get("/api/generatemeal", {
-        params: { GOAL_PROTEIN: 150, GOAL_CALORIES: 2000 },
+        params: { GOAL_PROTEIN: 150, GOAL_CALORIES: 2500 },
       });
       if (data) {
         const randomNumber = Math.floor(Math.random() * 4);
